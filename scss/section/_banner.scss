@@ -1,0 +1,36 @@
+.cre_banner{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    @media #{$tab}{
+        min-height: 536px;
+    }
+}
+.cre_banner_wrapper{
+    .title{
+        margin-bottom: 25px;
+        @media #{$mobile}{
+            font-size: 36px;
+            line-height: 45px;
+            margin-bottom: 20px;
+        }
+        @media #{$xs_mobile}{
+            font-size: 24px;
+            line-height: 34px;
+        }
+        @media #{$tab_device}{
+            font-size: 45px;
+            line-height: 55px;
+        }
+        @media #{$medium_device}{
+            font-size: 50px;
+            line-height: 60px;
+        }
+        @media #{$big_screen}{
+            font-size: 50px;
+            line-height: 60px;
+        }
+    }
+}

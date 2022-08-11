@@ -1,0 +1,140 @@
+/******** base color css ********/
+button:active {
+    outline: none;
+    border: none;
+}
+button:focus {
+    outline: 0;
+}
+.cu_btn {
+    display: inline-block;
+    padding: 12px 30px;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 16px;
+    @include transform_time(.3s);
+    font-family: $heading_font;
+    img{
+        max-width: 22px;
+    }
+    @media #{$mobile} {
+        padding: 10px 20px;
+    }
+    &.lg_btn{
+        padding: 25px 44px;
+    }
+    &.md_btn{
+        padding: 19px 26px;
+    }
+    &.xs_btn{
+        padding: 12px 20px;
+        font-size: 16px;
+        line-height: 19px;
+        border-radius: 10px;
+    }
+    &.btn_1 {
+        background-color: transparent;
+        border: 1px solid $heading_color;
+        color: $heading_color;
+        &:hover {
+            background-color: $base_color_1;
+            border-color: $base_color_1;
+            color: $white;
+        }
+    }
+    &.btn_2 {
+        background-color: transparent;
+        border: 1px solid rgba($color: $heading_color, $alpha: .2);
+        color: $btn_text;
+        &:hover {
+            background-color: $base_color_1;
+            border-color: $base_color_1;
+            color: $white;
+
+        }
+    }
+    &.btn_3 {
+        background-color: $base_color_1;
+        border: 1px solid $base_color_1;
+        color: $white;
+        &:hover {
+            background-color: $heading_color;
+            border-color: $heading_color;
+            color: $white;
+        }
+    }
+    &.btn_4 {
+        background-color: transparent;
+        border: 1px solid $base_color_1;
+        color: $base_color_1;
+        &:hover {
+            background-color: $base_color_1;
+            color: $white;
+        }
+    }
+    &.btn_5 {
+        border: 1px solid rgba($color: $white, $alpha: .1);
+        color: $white;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-family: $heading_font;
+        padding: 17px 40px;
+        &:hover {
+            background-color: $base_color_1;
+            border-color: $base_color_1;
+        }
+    }
+    &.base_btn {
+        background-color: $base_color_1;
+        border: 1px solid $base_color_1;
+        color: $white;
+        &:hover {
+            background-color: $heading_color;
+            border-color: $heading_color;
+            color: $white;
+        }
+    }
+    &.white_btn {
+        background-color: $white;
+        border: 1px solid $white;
+        color: $heading_color;
+        &:hover {
+            border-color: $base_color_1;
+            color: $white;
+            background-color: $base_color_1;
+        }
+    }
+}
+.read_more_btn {
+    position: relative;
+    display: inline-block;
+    font-size: 23px;
+    text-transform: uppercase;
+    margin: 0;
+    border-bottom: 1px solid $white;
+    font-weight: 500;
+    color: $white;
+    &:before {
+        content: "";
+        position: absolute;
+        left: auto;
+        right: 0;
+        bottom: -1px;
+        height: 1px;
+        width: 0;
+        -webkit-transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+        transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+        background: currentColor;
+        background-color: $base_color_1;
+    }
+    &:hover {
+        color: $base_color_1;
+        &:before {
+            width: 100%;
+            left: 0;
+            right: auto;
+        }
+    }
+}

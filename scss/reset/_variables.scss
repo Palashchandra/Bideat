@@ -1,0 +1,54 @@
+$heading_font: 'Inter', sans-serif;
+$body_font: 'Inter', sans-serif;
+
+//color
+$white: #fff;
+$black: #000;
+$body_color: #fff;
+$base_color_1: #02BCC1;
+$base_color_2: #034863;
+$section_bg: #F2F6F7;
+$section_bg_1: #f0f3f7;
+$btn_text: #02BCC1;
+$menu_color: #034863;
+$heading_color: #034863;
+$text_color_1: #034863;
+$text_color_2: #4b4b4b;
+$border_color: #d6d9dc;
+$icon_color: #9198a4;
+
+//typography
+$h1_font_size: 80px;
+$h2_font_size: 50px;
+$h3_font_size: 36px;
+$h4_font_size: 24px;
+$h5_font_size: 20px;
+$h6_font_size: 18px;
+$body_font_size: 18px;
+
+//font weight
+$font_extra_bold: 900;
+$font_bold: 700;
+$font_semi_bold: 600;
+$font_medium: 500;
+$font_ragular: 400;
+$font_light: 300;
+
+//font line height
+$body_line_height: 28px;
+$h1_line_height: 1.12;
+$h2_line_height: 1.2;
+$h3_line_height: 1.2;
+$h4_line_height: 1.3;
+$h5_line_height: 1.3;
+$h6_line_height: 1.3;
+
+$big_device: '(min-width: 991px)';
+$tab: '(max-width: 991px)';
+$mobile:'(max-width: 767.98px)';
+$xs_mobile:'(max-width: 576px)';
+$extra_big_screen: 'only screen and (min-width: 1441px) and (max-width: 1680px)';
+$big_screen:'only screen and (min-width: 1200px) and (max-width: 1441px)';
+$medium_device : 'only screen and (min-width: 992px) and (max-width: 1199.98px)';
+$tab_device:'only screen and (min-width: 768px) and (max-width: 991.98px)';
+$large_mobile: 'only screen and (min-width: 576px) and (max-width: 767.98px)';

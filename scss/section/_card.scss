@@ -1,0 +1,19 @@
+.cre_card_item{
+    &.style_01{
+        background-color: $base_color_2;
+        border-radius: 16px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        .card_content_wrapper{
+            padding: 27px 30px;
+        }
+    }
+    &.style_02{
+        background-color: $white;
+        border-radius: 16px;
+        overflow: hidden;
+        .card_content_wrapper{
+            padding: 27px 30px;
+        } 
+    }
+}

@@ -1,0 +1,111 @@
+.cre_footer_widget {
+    margin-bottom: 93px;
+    @media #{$tab}{
+        margin-bottom: 35px;
+    }
+    .widget_title {
+        font-size: $h5_font_size;
+        font-weight: $font_semi_bold;
+        margin-bottom: 35px;
+        color: $white;
+        @media #{$tab}{
+            margin-bottom: 20px;
+        }
+    }
+
+    .footer_menu {
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style: none;
+            margin-bottom: 9px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            a {
+                color: rgba($color: $white, $alpha: .6);
+                font-size: $body_font_size;
+                display: inline-block;
+                &:hover {
+                    color: $base_color_1;
+                }
+            }
+        }
+    }
+}
+
+.cre_copyright_content {
+    padding: 24px 0;
+    border-top: 1px solid rgba($color: $white, $alpha: .1);
+    .copyright_content_inner {
+        display: flex;
+        align-items: center;
+
+        @media #{$tab} {
+            margin: 20px 0;
+            justify-content: center;
+            text-align: center;
+        }
+
+        p {
+            color: $white;
+            @media #{$medium_device} {
+                margin-left: 10px;
+            }
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                list-style: none;
+                display: inline-block;
+                margin-right: 30px;
+
+                @media #{$medium_device} {
+                    margin-right: 10px;
+                }
+                @media #{$tab} {
+                    margin-right: 10px;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                a {
+                    color: rgba($color: $white, $alpha: .8);
+                    font-family: $heading_font;
+                    &:hover {
+                        color: $base_color_1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.social_icon a {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: inline-grid;
+    place-items: center;
+    color: $base_color_1;
+    border: 1px solid $base_color_1;
+    font-size: $body_font;
+    margin-right: 4px;
+    &:hover{
+        background-color: $base_color_1;
+        color: $white;
+    }
+
+}
+
+.social_icon a:last-child {
+    margin-right: 0;
+}
+
