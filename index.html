@@ -26,23 +26,18 @@
 <body>
     <header class="cre_header_part">
         <div class="cre_header_part_wrapper">
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-xl navbar-light p-0">
                 <div class="container custom_container">
                     <a class="navbar-brand" href="index.html">
                         <img src="img/logo.png" alt="#" srcset="img/logo_2x.png 2x" class="main_logo">
                         <img src="img/logo.png" alt="#" srcset="img/logo_2x.png 2x" class="sticky_logo">
                     </a>
                     <div class="mobile_collaps_icon d-flex align-items-center">
-                        <a class="cu_btn white_btn d-lg-none" href="#">Contact Us</a>
-                        <button class="navbar-toggle collapsed d-lg-none" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
+                        <button class="border-0 bg-transparent d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                            <i class="fas fa-bars fs-2"></i>
                         </button>
                     </div>
-                    <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <div class="collapse navbar-collapse justify-content-center " id="navbarNavAltMarkup">
                         <div class="search_form">
                             <form action="#">
                                 <input type="text" placeholder="Search">
@@ -52,7 +47,7 @@
                             </form>
                         </div>
                     </div>
-                    <div class="header_btn">
+                    <div class="header_btn d-none d-xl-grid">
                         <a class="cu_btn btn_3" href="#">Sign up</a>
                         <a class="cu_btn btn_1" href="#">Log in</a>
                     </div>
@@ -64,43 +59,52 @@
     <!-- banner here -->
     <div class="cre_banner">
         <div class="container custom_container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-lg-5">
-                    <div class="cre_banner_wrapper">
-                        <h1 class="title wow fadeInUp" data-wow-delay=".3s">
+            <div class="row flex-lg-row-reverse align-items-center justify-content-between">
+                <div class="col-lg-6">
+                    <div class="cre_banner_img wow fadeInRight text-center text-lg-start" data-wow-delay=".5s">
+                        <img src="img/banner_img.png" alt="#" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-5">
+                    <div class="cre_banner_wrapper text-center text-lg-start">
+                        <h1 class="title wow fadeInUp mt-4 mt-lg-0" data-wow-delay=".3s">
                             Last Minute Restaurant Reservations
                         </h1>
-                        <div class="banner_filter_list">
-                            <form action="#">
+                        <form action="#" class="banner_filter_wrapper d-flex align-items-center wow fadeInUp" data-wow-delay=".5s">
+                            <div class="input_group_wrapper">
                                 <div class="input_group">
-                                    <input id="datepicker" />
+                                    <img src="img/icon/calendar.svg" alt="#" class="group_icon">
+                                    <input id="datepicker" placeholder="Date" />
                                 </div>
+                            </div>
+                            <div class="input_group_wrapper">
                                 <div class="input_group">
+                                    <img src="img/icon/clock.svg" alt="#" class="group_icon">
                                     <select class="niceSelect">
                                         <option selected>Time</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
+                                        <option value="1">5pm-7pm</option>
+                                        <option value="2">7pm-9pm</option>
+                                        <option value="3">9pm-11pm</option>
                                     </select>
                                 </div>
+                            </div>
+                            <div class="input_group_wrapper">
                                 <div class="input_group">
+                                    <img src="img/icon/map-pin.svg" alt="#" class="group_icon">
                                     <select class="niceSelect">
                                         <option selected>Location</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
                                         <option value="3">Three</option>
-                                    </select>
+                                    </select> 
                                 </div>
-                                <div class="input_group">
+                            </div>
+                            <div class="input_group_wrapper">
+                                <div class="input_group ps-0">
                                     <button class="cu_btn btn_3">Find Tables</button>
                                 </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="cre_banner_img">
-                        <img src="img/banner_img.png" alt="#" class="img-fluid">
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -112,24 +116,20 @@
     <div class="cre_section section_padding" data-bg-color="#F2F6F7">
         <div class="container custom_container">
             <div class="row justify-content-center">
-                <div class="col-lg-6">
+                <div class="col-lg-7">
                     <div class="cre_section_title text-center">
                         <h2 class="title wow fadeInUp" data-wow-delay=".3s">
-                            What we provide
+                            High Demand<br> Restaurants Right Now 🔥
                         </h2>
-                        <p class="description wow fadeInUp" data-wow-delay=".5s">
-                            Bring your dream home to life with one-on-one design 
-                            help & hand-picked products.
-                        </p>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-12">
-                    <div class="cre_high_restaurants">
+                    <div class="cre_high_restaurants wow fadeInUp" data-wow-delay=".3s">
                         <div class="swiper-container"
-                        data-perpage="3" data-loop="true" data-autoplay="true" data-speed="500" data-space="30"
-                        data-breakpoints='{"1440": {"slidesPerView": 3},"1024": {"slidesPerView": 3}, "768": {"slidesPerView": 3}, "480": {"slidesPerView": 2}}'>
+                        data-perpage="3" data-loop="true" data-autoplay="true" data-speed="500" data-space="30" data-next=".slider_next_one" data-prev=".slider_prev_one"
+                        data-breakpoints='{"1440": {"slidesPerView": 3},"991": {"slidesPerView": 2}, "768": {"slidesPerView": 2}, "480": {"slidesPerView": 1}}'>
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="restaurants_inner_item">
@@ -142,7 +142,47 @@
                                         <div class="restaurants_content">
                                             <div class="restaurants_title mt-3 d-flex align-items-start justify-content-between">
                                                 <h6 class="title">Bavette's Bar & Boeuf, Chicago</h6>
-                                                <div class="rating fs-6 d-flex align-items-center"><i class="fas fa-star me-1 base_color_1"></i>4.9</div>
+                                                <div class="rating fs-6 d-flex align-items-center"><i class="fas fa-star me-1 base_color_3"></i>4.9</div>
+                                            </div>
+                                            <h6 class="sub_title fst-italic fs-6 mb-1 mt-2">Current Bids:</h6>
+                                            <p class="description fs-6">Friday Night (06/11): <span class="base_color_1 font_600">$35.0</span></p>
+                                            <p class="description fs-6">Saturday Night (06/12): <span class="base_color_1 font_600">$19.0</span></p>
+                                            <a href="#" class="cu_btn btn_4 xs_btn mt-4">Bid for a Table</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="restaurants_inner_item">
+                                        <div class="restaurants_thumb position-relative">
+                                            <img src="img/restaurants_2.png" alt="#" class="img-fluid">
+                                            <div class="tricker">
+                                                <img src="img/icon/heart.svg" alt="#">
+                                            </div>
+                                        </div>
+                                        <div class="restaurants_content">
+                                            <div class="restaurants_title mt-3 d-flex align-items-start justify-content-between">
+                                                <h6 class="title">Bavette's Bar & Boeuf, Chicago</h6>
+                                                <div class="rating fs-6 d-flex align-items-center"><i class="fas fa-star me-1 base_color_3"></i>4.9</div>
+                                            </div>
+                                            <h6 class="sub_title fst-italic fs-6 mb-1 mt-2">Current Bids:</h6>
+                                            <p class="description fs-6">Friday Night (06/11): <span class="base_color_1 font_600">$35.0</span></p>
+                                            <p class="description fs-6">Saturday Night (06/12): <span class="base_color_1 font_600">$19.0</span></p>
+                                            <a href="#" class="cu_btn btn_4 xs_btn mt-4">Bid for a Table</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="restaurants_inner_item">
+                                        <div class="restaurants_thumb position-relative">
+                                            <img src="img/restaurants_3.png" alt="#" class="img-fluid">
+                                            <div class="tricker">
+                                                <img src="img/icon/heart.svg" alt="#">
+                                            </div>
+                                        </div>
+                                        <div class="restaurants_content">
+                                            <div class="restaurants_title mt-3 d-flex align-items-start justify-content-between">
+                                                <h6 class="title">Bavette's Bar & Boeuf, Chicago</h6>
+                                                <div class="rating fs-6 d-flex align-items-center"><i class="fas fa-star me-1 base_color_3"></i>4.9</div>
                                             </div>
                                             <h6 class="sub_title fst-italic fs-6 mb-1 mt-2">Current Bids:</h6>
                                             <p class="description fs-6">Friday Night (06/11): <span class="base_color_1 font_600">$35.0</span></p>
@@ -152,6 +192,14 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="slider_pagination text-center mt-5 wow fadeInUp" data-wow-delay=".4s">
+                            <span class="slider_prev_one">
+                                <img src="img/icon/arrow-left-1.svg" alt="#">
+                            </span>
+                            <span class="slider_next_one">
+                                <img src="img/icon/arrow-right-1.svg" alt="#">
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -167,14 +215,14 @@
                 <div class="col-lg-6">
                     <div class="cre_section_title text-center">
                         <h2 class="title wow fadeInUp" data-wow-delay=".3s">
-                            What we provide
+                            Explore all that <br>    Bideat has to Offer.
                         </h2>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="cre_card_item style_01">
+                <div class="col-md-6">
+                    <div class="cre_card_item style_01 wow fadeInUp" data-wow-delay=".3s">
                         <div class="card_thumb">
                             <img src="img/card/card_1.png" alt="#" class="img-fluid">
                         </div>
@@ -189,14 +237,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="cre_card_item style_01">
+                <div class="col-md-6">
+                    <div class="cre_card_item style_01 wow fadeInUp" data-wow-delay=".4s">
                         <div class="card_thumb">
                             <img src="img/card/card_2.png" alt="#" class="img-fluid">
                         </div>
                         <div class="card_content_wrapper d-flex align-items-center justify-content-between">
                             <div class="card_content">
-                                <h4 class="title mb-0 text-white">Outdoor Seating</h4>
+                                <h4 class="title mb-0 text-white">Cocktail Bars</h4>
                                 <p class="description fs-6 text-white">Explore fooftop terraces, beer gardens, and courtyards.</p>
                             </div>
                             <a href="#">
@@ -205,8 +253,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="cre_card_item style_01">
+                <div class="col-md-6">
+                    <div class="cre_card_item style_01 wow fadeInUp" data-wow-delay=".5s">
                         <div class="card_thumb">
                             <img src="img/card/card_3.png" alt="#" class="img-fluid">
                         </div>
@@ -221,14 +269,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="cre_card_item style_01">
+                <div class="col-md-6">
+                    <div class="cre_card_item style_01 wow fadeInUp" data-wow-delay=".6s">
                         <div class="card_thumb">
                             <img src="img/card/card_4.png" alt="#" class="img-fluid">
                         </div>
                         <div class="card_content_wrapper d-flex align-items-center justify-content-between">
                             <div class="card_content">
-                                <h4 class="title mb-0 text-white">Outdoor Seating</h4>
+                                <h4 class="title mb-0 text-white">Cocktail Bars</h4>
                                 <p class="description fs-6 text-white">Explore fooftop terraces, beer gardens, and courtyards.</p>
                             </div>
                             <a href="#">
@@ -245,26 +293,27 @@
     <!-- section here -->
     <div class="cre_section section_padding" data-bg-color="#F2F6F7">
         <div class="container custom_container">
-            <div class="row-span-4">
-                <div class="col-lg-6">
-                    <div class="cre_section_title">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="cre_section_title text-center text-md-start d-md-flex align-items-center justify-content-between">
                         <h2 class="title wow fadeInUp" data-wow-delay=".3s">
-                            What we provide
+                            New & Notable
                         </h2>
+                        <a href="#" class="cu_btn white_btn wow fadeInUp my-3 my-lg-0" data-wow-delay=".4s">See All <img src="img/icon/arrow-right.svg" alt="#"></a>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-12">
-                    <div class="cre_high_restaurants">
+                    <div class="cre_high_restaurants wow fadeInUp" data-wow-delay=".5s">
                         <div class="swiper-container"
                         data-perpage="3" data-loop="true" data-autoplay="true" data-speed="500" data-space="30"
-                        data-breakpoints='{"1440": {"slidesPerView": 3},"1024": {"slidesPerView": 3}, "768": {"slidesPerView": 3}, "480": {"slidesPerView": 2}}'>
+                        data-breakpoints='{"1440": {"slidesPerView": 3},"991": {"slidesPerView": 2}, "768": {"slidesPerView": 2}, "480": {"slidesPerView": 1}}'>
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="cre_card_item style_02">
                                         <div class="card_thumb">
-                                            <img src="img/card/card_1.png" alt="#" class="img-fluid">
+                                            <img src="img/news/blog_1.png" alt="#" class="img-fluid">
                                         </div>
                                         <div class="card_content_wrapper">
                                             <h4 class="title mb-0">Bavette's Bar & Boeuf,<br> <span class="base_color_1">Chicago</span> </h4>
@@ -274,27 +323,27 @@
                                 <div class="swiper-slide">
                                     <div class="cre_card_item style_02">
                                         <div class="card_thumb">
-                                            <img src="img/card/card_1.png" alt="#" class="img-fluid">
+                                            <img src="img/news/blog_2.png" alt="#" class="img-fluid">
                                         </div>
                                         <div class="card_content_wrapper">
-                                            <h4 class="title mb-0">Bavette's Bar & Boeuf,<br> <span class="base_color_1">Chicago</span> </h4>
+                                            <h4 class="title mb-0">Union Square Cafe,<br> <span class="base_color_1">New York</span> </h4>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="cre_card_item style_02">
                                         <div class="card_thumb">
-                                            <img src="img/card/card_1.png" alt="#" class="img-fluid">
+                                            <img src="img/news/blog_3.png" alt="#" class="img-fluid">
                                         </div>
                                         <div class="card_content_wrapper">
-                                            <h4 class="title mb-0">Bavette's Bar & Boeuf,<br> <span class="base_color_1">Chicago</span> </h4>
+                                            <h4 class="title mb-0">Bestia,<br> <span class="base_color_1">Los Angeles</span> </h4>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="cre_card_item style_02">
                                         <div class="card_thumb">
-                                            <img src="img/card/card_1.png" alt="#" class="img-fluid">
+                                            <img src="img/news/blog_1.png" alt="#" class="img-fluid">
                                         </div>
                                         <div class="card_content_wrapper">
                                             <h4 class="title mb-0">Bavette's Bar & Boeuf,<br> <span class="base_color_1">Chicago</span> </h4>
@@ -314,13 +363,13 @@
     <div class="cre_section section_padding">
         <div class="container custom_container">
             <div class="row justify-content-between align-items-center">
-                <div class="col-lg-5 col-sm-6">
-                    <div class="cre_img_box text-center text-lg-start">
+                <div class="col-lg-5 col-md-6">
+                    <div class="cre_img_box text-center text-lg-start wow fadeInUp" data-wow-delay=".3s">
                         <img src="img/restaurants_img.png" alt="#" class="img-fluid">
                     </div>
                 </div>
-                <div class="col-lg-6 col-sm-6">
-                    <div class="cre_text_box style_02 text-center text-lg-start">
+                <div class="col-lg-7 col-md-6">
+                    <div class="cre_text_box style_02 mt-4 mt-lg-0 text-center text-md-start ps-lg-5 ms-lg-4">
                         <h2 class="title wow fadeInUp" data-wow-delay=".3s">
                             Restaurateurs Join Us
                         </h2>
@@ -339,14 +388,14 @@
     <section class="cre_footer_section padding_top" data-bg-color="#034863">
         <div class="container custom_container">
             <div class="row justify-content-between">
-                <div class="col-lg-5 col-sm-6">
+                <div class="col-lg-5 col-sm-12">
                     <div class="cre_footer_widget">
-                        <img src="img/logo.png" alt="#" srcset="img/logo_2x.png 2x" class="footer_logo mb-4">
+                        <img src="img/footer_logo.png" alt="#" srcset="img/logo_2x.png 2x" class="footer_logo mb-4">
                         <h4 class="description text-white">Curious about our <br> reservation and table <br> management system?</h4>
                     </div>
                 </div>
-                <div class="col-lg-2 col-sm-6">
-                    <div class="cre_footer_widget">
+                <div class="col-lg-2 col-sm-4">
+                    <div class="cre_footer_widget mt-lg-4">
                         <h2 class="widget_title">
                             Company
                         </h2>
@@ -358,8 +407,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="cre_footer_widget">
+                <div class="col-lg-3 col-sm-4">
+                    <div class="cre_footer_widget mt-lg-4">
                         <h2 class="widget_title">
                             Discover
                         </h2>
@@ -372,8 +421,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2 col-sm-6">
-                    <div class="cre_footer_widget">
+                <div class="col-lg-2 col-sm-4">
+                    <div class="cre_footer_widget mt-lg-4">
                         <h2 class="widget_title">
                             Support
                         </h2>
@@ -403,6 +452,25 @@
         </div>
     </section>
     <!-- footer section end -->
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <img src="img/logo.png" alt="#" srcset="img/logo_2x.png 2x" class="main_logo">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="search_form">
+                <form action="#">
+                    <input type="text" placeholder="Search">
+                    <button type="submit" class="search_icon p-0 border-0 bg-transparent">
+                        <img src="img/icon/search.svg" alt="#">
+                    </button>
+                </form>
+            </div>
+            <a class="cu_btn btn_3 d-block text-center mb-3" href="#">Sign up</a>
+            <a class="cu_btn btn_1 d-block text-center" href="#">Log in</a>
+        </div>
+    </div>
 
     <a class="cre_top_scroll">
         <i class="fas fa-angle-up"></i>

@@ -1,15 +1,18 @@
 .cre_footer_widget {
-    margin-bottom: 93px;
+    margin-bottom: 60px;
     @media #{$tab}{
         margin-bottom: 35px;
     }
+    @media #{$mobile}{
+        text-align: center;
+    }
     .widget_title {
-        font-size: $h5_font_size;
+        font-size: 18px;
         font-weight: $font_semi_bold;
-        margin-bottom: 35px;
+        margin-bottom: 15px;
         color: $white;
         @media #{$tab}{
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
     }
 
@@ -19,7 +22,7 @@
 
         li {
             list-style: none;
-            margin-bottom: 9px;
+            margin-bottom: 3px;
 
             &:last-child {
                 margin-bottom: 0;
@@ -27,7 +30,7 @@
 
             a {
                 color: rgba($color: $white, $alpha: .6);
-                font-size: $body_font_size;
+                font-size: 16px;
                 display: inline-block;
                 &:hover {
                     color: $base_color_1;

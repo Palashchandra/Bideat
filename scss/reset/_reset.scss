@@ -173,7 +173,7 @@ button:focus,
     transition: all .25s cubic-bezier(.645, .045, .355, 1);
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1300px) {
     .custom_container {
         max-width: 1200px;
     }
@@ -181,7 +181,9 @@ button:focus,
 
 .cre_section_title {
     margin-bottom: 73px;
-
+    @media #{$tab} {
+        margin-bottom: 35px;
+    }
     .title {
         font-size: $h2_font_size;
         margin-bottom: 5px;
@@ -304,6 +306,9 @@ button:focus,
 }
 .base_color_2{
     color: $base_color_2;
+}
+.base_color_3{
+    color: $base_color_3;
 }
 .white_img{
     filter: brightness(0) invert(1);

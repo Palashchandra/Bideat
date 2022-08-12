@@ -14,3 +14,19 @@
         color: #030D11;
     }
 }
+.slider_pagination span.slider_prev_one, .slider_pagination span.slider_next_one {
+    border: 1.5px solid #034863;
+    width: 60px;
+    height: 60px;
+    display: inline-grid;
+    border-radius: 50%;
+    place-content: center;
+    margin: 0 5px;
+    &:hover{
+        background-color: #034863;
+        color: #fff;
+        img{
+            filter: brightness(0) invert(1);
+        }
+    }
+}

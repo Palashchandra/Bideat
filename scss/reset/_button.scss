@@ -99,11 +99,11 @@ button:focus {
     &.white_btn {
         background-color: $white;
         border: 1px solid $white;
-        color: $heading_color;
+        color: $base_color_1;
         &:hover {
-            border-color: $base_color_1;
+            border-color: $base_color_2;
             color: $white;
-            background-color: $base_color_1;
+            background-color: $base_color_2;
         }
     }
 }
