@@ -140,8 +140,49 @@
     }
 
     //datepicker jquery
-    $('#datepicker').datepicker({
-        uiLibrary: 'bootstrap5'
+    var datepicker = $('#datepicker');
+    if(datepicker.length){
+        datepicker.datepicker({
+            uiLibrary: 'bootstrap5'
+        });
+    }
+
+    //pass recovery Modal
+    $('#reg_btn_1').on('click', function (e) {
+        $('#login_modal').modal('hide');
+        $('#reser_pass_modal').modal('hide');
+        $('#Register_modal').modal();
+        e.preventDefault();
     });
+
+    $('#login_btn_1').on('click', function (e) {
+        $('#reser_pass_modal').modal('hide');
+        $('#login_modal').modal();
+        e.preventDefault();
+    });
+
+    $('#login_btn_2').on('click', function (e) {
+        $('#Register_modal').modal('hide');
+        $('#login_modal').modal();
+        e.preventDefault();
+    });
+
+    //mobile number
+    var mobile_number = $("#mobile-number");
+    if(mobile_number.length){
+        mobile_number.intlTelInput();
+    }
+
+    //toggle password
+    $(".toggle-password").click(function() {
+        $(this).toggleClass("fa-eye fa-eye-slash");
+        var input = $($(this).attr("toggle"));
+        if (input.attr("type") == "password") {
+          input.attr("type", "text");
+        } else {
+          input.attr("type", "password");
+        }
+    });
+
 
 }(jQuery));

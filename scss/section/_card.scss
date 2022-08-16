@@ -19,5 +19,18 @@
         @media #{$tab}{
             text-align: center;
         }
+        .card_thumb{
+            overflow: hidden;
+            img{
+                @include transform_time(.3s);
+            }
+        }
+        &:hover{
+            .card_thumb{
+                img{
+                    transform: scale(1.1);
+                }
+            }
+        }
     }
 }

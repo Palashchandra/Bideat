@@ -65,11 +65,13 @@ button:focus {
         }
     }
     &.btn_4 {
-        background-color: transparent;
-        border: 1px solid $base_color_1;
-        color: $base_color_1;
+        background-color: #F2F6F7;
+        border: 1px solid rgba($color: #034863, $alpha: .10);
+        color: $heading_color;
+        border-radius: 8px;
         &:hover {
             background-color: $base_color_1;
+            border-color: $base_color_1;
             color: $white;
         }
     }

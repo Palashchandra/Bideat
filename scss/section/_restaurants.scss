@@ -8,6 +8,14 @@
     border-radius: 50px;
     display: inline-grid;
     place-content: center;
+    cursor: pointer;
+    @include transform_time(.3s);
+    &:hover{
+        background-color: $base_color_1;
+        img{
+            filter: brightness(0) invert(1);
+        }
+    }
 }
 .restaurants_content{
     .sub_title{
@@ -27,6 +35,109 @@
         color: #fff;
         img{
             filter: brightness(0) invert(1);
+        }
+    }
+}
+.restaurants_thumb{
+    .slider_nav{
+        z-index: 9;
+        left: 20px;
+        width: 40px;
+        height: 40px;
+        background: #FFFFFF;
+        display: inline-grid;
+        place-content: center;
+        border-radius: 50%;
+        &.slider_next{
+            left: auto;
+            right: 20px;
+        }
+    }
+}
+.restaurants_inner_item{
+    &.style_02{
+        margin-bottom: 50px;
+        .restaurants_thumb {
+            margin-bottom: 24px;
+        }
+        .restaurants_title{
+            .title{
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+        }
+        .bid_title{
+            font-size: 20px;
+            color: $base_color_1;
+            margin-bottom: 15px;
+        }
+        .sub_title{
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        .description{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+            span{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                color: #034863;
+                padding: 10px 13px;
+                border: 1px solid rgba(3, 72, 99, 0.5);
+                border-radius: 8px;
+                margin: 4px;
+                &:first-child{
+                    margin-left: 20px;
+                }
+                @media #{$tab_device}{
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #034863;
+                    padding: 7px 5px;
+                }
+            }
+        }
+        .cu_btn.xs_btn {
+            padding: 16px 20px;
+            line-height: 20px;
+        }
+    }
+}
+.cre_post_pagination{
+    .cre_pagination li{
+        width: 34px;
+        height: 34px;
+        border-radius: 8px;
+        display: inline-grid;
+        place-content: center;
+        @include transform_time(.3s);
+        background-color: #F2F6F7;
+        margin: 0 4px;
+        
+        &:hover{
+            background-color: $base_color_1;
+            a{
+                color: $white;
+            }
+        }
+        &:first-child, &:last-child{
+            width: auto;
+            height: auto;
+            background-color: transparent;
+            margin: 0 16px;
+            a{
+                color: #034863;
+                opacity: 0.4;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+            &:hover{
+                background-color: transparent;
+            }
         }
     }
 }

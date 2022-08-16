@@ -94,6 +94,7 @@
             border: 0px solid transparent;
             padding: 0;
             width: 100%;
+            background-color: transparent;
         }
         .cu_btn.btn_3{
             white-space: nowrap;
@@ -109,6 +110,7 @@
         
         .gj-datepicker.gj-datepicker-md.gj-unselectable {
             position: relative;
+            width: 100%;
         }
         
         .gj-datepicker.gj-datepicker-md.gj-unselectable:after {
@@ -180,3 +182,78 @@
         border-bottom: 0px solid transparent;
     } 
 }
+.cre_banner_wrapper.style_02{
+    &.my-40{
+        margin: 40px 0;
+    }
+    .input_group_wrapper {
+        margin-right: 10px;
+        border: 0px solid transparent;
+        background-color: #F2F6F7;
+        padding: 17px 15px;
+        border-radius: 16px;
+        &:last-child{
+            padding: 0;
+            background-color: transparent;
+        }
+    }
+   
+    @media (min-width: 990.98px){
+        .input_group_wrapper {
+            flex: 27% 0 0;
+        }
+        .input_group_wrapper:last-child {
+            flex: 13% 0 0;
+            margin-right: 0;
+        }
+    }
+    @media (min-width: 767.98px) and (max-width: 991px) {
+        .input_group_wrapper {
+            flex: 24% 0 0;
+        }
+        .input_group_wrapper:last-child {
+            flex: 13% 0 0;
+            margin-right: 0;
+        }
+    }
+    @media (max-width: 767.98px){
+        .input_group_wrapper {
+            margin-bottom: 15px !important;
+        }
+    }
+    .input_group_wrapper .niceSelect {
+        border: 0px solid transparent;
+        padding: 5px;
+        width: 100%;
+        background-color: transparent;
+        height: auto;
+        line-height: initial;
+    }
+    
+}
+.search_filter {
+    .nice-select {
+        background-color: #F2F6F7;
+        border: 0px solid transparent;
+        border-radius: 10px;
+        font-size: 16px;
+        color: #034863;
+    }
+    
+    .nice-select:after {
+        border-bottom: 2px solid #000000;
+        border-right: 2px solid #000000;
+        width: 8px;
+        height: 8px;
+    }
+}   
+// @media (min-width: 767.98px){
+//     .banner_filter_wrapper .input_group_wrapper {
+//         flex: 27% 0 0;
+//         margin-right: 10px;
+//     }
+//     .banner_filter_wrapper .input_group_wrapper:last-child {
+//         flex: 13% 0 0;
+//         margin-right: 0;
+//     }
+// }

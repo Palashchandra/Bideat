@@ -313,4 +313,13 @@ button:focus,
 .white_img{
     filter: brightness(0) invert(1);
 }
+.cre_search_filter{
+    .banner_filter_wrapper {
+        margin-right: 0;
+        justify-content: space-between;
+    }
+}
+.mb-40{
+    margin-bottom: 40px;
+}
 /**************** common css end ****************/
