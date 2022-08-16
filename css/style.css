@@ -462,6 +462,17 @@ button:focus {
   background-color: #02BCC1;
   border-color: #02BCC1;
 }
+.cu_btn.btn_6 {
+  background-color: #fff;
+  border: 1px solid #02bcc1;
+  color: #034863;
+  border-radius: 8px;
+}
+.cu_btn.btn_6:hover {
+  background-color: #02BCC1;
+  border-color: #02BCC1;
+  color: #fff;
+}
 .cu_btn.base_btn {
   background-color: #02BCC1;
   border: 1px solid #02BCC1;

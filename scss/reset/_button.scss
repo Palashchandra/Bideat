@@ -88,6 +88,17 @@ button:focus {
             border-color: $base_color_1;
         }
     }
+    &.btn_6 {
+        background-color: #fff;
+        border: 1px solid rgba($color: #02BCC1, $alpha: 1);
+        color: $heading_color;
+        border-radius: 8px;
+        &:hover {
+            background-color: $base_color_1;
+            border-color: $base_color_1;
+            color: $white;
+        }
+    }
     &.base_btn {
         background-color: $base_color_1;
         border: 1px solid $base_color_1;
