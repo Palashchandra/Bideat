@@ -99,6 +99,28 @@ button:focus {
             color: $white;
         }
     }
+    &.btn_7 {
+        background: #F2F6F7;
+        border: 1.5px solid rgba(3, 72, 99, 0.5);
+        border-radius: 12px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 30px;
+        color: #638E9E;
+        padding: 19px 22px;
+        min-width: 200px;
+        @media #{$mobile}{
+            padding: 12px 22px;
+            min-width: 127px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        &:hover, &.active  {
+            background-color: $base_color_1;
+            border-color: $base_color_1;
+            color: $white;
+        }
+    }
     &.base_btn {
         background-color: $base_color_1;
         border: 1px solid $base_color_1;

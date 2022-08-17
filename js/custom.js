@@ -172,6 +172,16 @@
     if(mobile_number.length){
         mobile_number.intlTelInput();
     }
+    //mobile number
+    var mobile_number = $("#mobile-number1");
+    if(mobile_number.length){
+        mobile_number.intlTelInput();
+    }
+    //mobile number
+    var mobile_number = $("#mobile-number2");
+    if(mobile_number.length){
+        mobile_number.intlTelInput();
+    }
 
     //toggle password
     $(".toggle-password").click(function() {

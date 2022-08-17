@@ -1,0 +1,45 @@
+.cre_contact_wrapper {
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 50px 40px 40px;
+    @media #{$mobile}{
+        padding: 30px 10px 10px;
+    }
+    .nav-pills{
+        .nav-item{
+            margin: 0 4px;
+        }
+    }
+    .form_content_wrapper{
+        label{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            color: #034863;
+            margin-bottom: 10px;
+        }
+        .cu_input{
+            background-color: $white;
+        }
+        .cu_btn.btn_3{
+            border-radius: 8px;
+            margin-top: 40px;
+            @media #{$mobile}{
+                margin-top: 10px;
+            }
+        }
+        textarea#Message {
+            min-height: 140px;
+        }
+    }
+}
+.form-check-input:checked {
+    background-color: $base_color_1;
+    border-color: $base_color_1;
+    box-shadow: none;
+}
+@media #{$tab}{
+    br{
+        display: none;
+    }
+}

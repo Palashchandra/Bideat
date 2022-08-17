@@ -141,3 +141,11 @@
         }
     }
 }
+
+.cre_post_pagination .cre_pagination li {
+    margin: 5px;
+}
+ul.cre_pagination.d-flex.justify-content-center {
+    flex-wrap: wrap;
+    padding: 0;
+}
