@@ -1,0 +1,196 @@
+.cursor-pointer {
+    cursor: pointer;
+}
+div#v-pills-tab {}
+
+.account_section_nav button.nav-link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgb(3 72 99 / 80%);
+    margin-bottom: 24px;
+}
+
+.account_section_nav button.nav-link.active {
+    background-color: transparent;
+    color: #034863;
+    font-weight: 600;
+}
+.account_content_wrapper {
+    background-color: $white;
+    padding: 40px;
+    border-radius: 16px;
+    @media #{$mobile}{
+        padding: 25px;
+        .restaurent_content img {
+            margin-right: 0 !important;
+        }
+        
+        .restaurent_content_wrapper img {
+            margin-right: 20px;
+        }
+    }
+    .card_box h5 a{
+        color: $heading_color;
+        &:hover{
+            color: $base_color_1;
+        }
+    }
+    .account_content_title{
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgba($color: #034863, $alpha: .10);
+        margin-bottom: 30px;
+        @media #{$mobile}{
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+        }
+    }
+    label {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #034863;
+        margin-bottom: 10px;
+    }
+    
+    .form-group {
+        margin-bottom: 24px;
+    }
+    thead th:not(:first-child) {
+        text-align: center;
+    }
+    .table>:not(caption)>*>*{
+        padding: 16px 0;
+    }
+    th {
+        color: rgb(3 72 99 / 60%);
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 22px;
+        text-transform: uppercase;
+    }
+    tbody{
+        th {
+            text-transform: capitalize;
+        }
+        br{
+            display: block;
+        }
+    }
+    td {
+        font-size: 14px;
+        line-height: 22px;
+        color: #034863;
+        vertical-align: middle;
+        text-align: center;
+        span{
+            padding: 7px 12px;
+            border-radius: 50px;
+            color: #fff;
+        }
+    }
+    @media #{$mobile}{
+        .table {
+            margin-top: 40px;
+        }
+        .table thead {
+            display: none;
+        }
+
+        .table,
+        .table tbody,
+        .table tr,
+        .table td, .table th {
+            display: block;
+            width: 100%;
+        }
+
+    }
+    a.save_btn {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        color: #034863;
+        font-weight: 500;
+    }
+    
+    a.save_btn .tricker {
+        margin-right: 12px;
+    }
+}
+.restaurent_list{
+    &:not(:last-child){
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+        border-bottom: 1px solid rgba($color: #034863, $alpha: .10);
+    }
+    .description{
+        font-size: 14px;
+    }
+    h6{
+        margin-top: 10px;
+        .tricker {
+            width: 30px;
+            height: 30px;
+            border: 1px solid rgba($color: #034863, $alpha: .20);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 28px;
+            img{
+                max-width: 14px;
+            }
+        }
+        .save_btn.saved{
+            .tricker {
+                img{
+                    filter: brightness(0.5) invert(0);
+                }
+            }
+        }
+    }
+
+}
+
+.payment_method_modal{
+    .modal-content{
+        padding: 40px;
+        border-radius: 16px;
+        @media #{$mobile}{
+            padding: 15px;
+        }
+    }
+    .modal-header, .modal-body, .modal-footer{
+        padding: 0;
+        border: 0px solid transparent;
+    }
+}
+.cart_content_list {
+    background: #FFFFFF;
+    border: 2px solid rgba($color: #034863, $alpha: .10);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+    @include transform_time(.3s);
+    &:hover{
+        border: 2px solid #02BCC1;
+    }
+    .description{
+        color: rgba($color: #034863, $alpha: .60)
+    }
+    @media #{$mobile}{
+        padding: 15px;
+        
+    }
+}
+.cre_breadcrumb_content{
+    @media #{$mobile}{
+        h3{
+            font-size: 24px;
+            line-height: 32px;;
+        }
+        
+    }
+}
+.heading_color{
+    color: #034863 !important;
+}

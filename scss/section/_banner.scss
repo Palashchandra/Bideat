@@ -91,10 +91,7 @@
             
         }
         .niceSelect{
-            border: 0px solid transparent;
-            padding: 0;
             width: 100%;
-            background-color: transparent;
         }
         .cu_btn.btn_3{
             white-space: nowrap;
@@ -230,6 +227,14 @@
         line-height: initial;
     }
     
+}
+.niceSelect{
+    border: 0px solid transparent;
+    padding: 0 38px 0 0;
+    background-color: transparent;
+    &:after{
+        top: 42%;
+    }
 }
 .search_filter {
     .nice-select {

@@ -121,6 +121,15 @@ button:focus {
             color: $white;
         }
     }
+    &.base_border_btn{
+        border: 1px solid $base_color_1;
+        color: $base_color_1;
+        background-color: transparent;
+        &:hover{
+            background-color: $base_color_1;
+            color: $white;
+        }
+    }
     &.base_btn {
         background-color: $base_color_1;
         border: 1px solid $base_color_1;

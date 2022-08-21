@@ -194,5 +194,12 @@
         }
     });
 
+    //save resturent js
+    $(".save_btn").on("click", function(e){
+        e.preventDefault();
+        $(this).toggleClass('saved');
+    });
+    
+
 
 }(jQuery));
