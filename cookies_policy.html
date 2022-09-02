@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body class="modal-open">
+<body>
     <header class="cre_header_part">
         <div class="cre_header_part_wrapper">
             <nav class="navbar navbar-expand-xl navbar-light p-0">
@@ -60,145 +60,125 @@
         </div>
     </header>
 
-    <!-- search filter here -->
-    <div class="cre_breadcrumb" data-bg-color="#fff">
+    <!-- breadcrumb here -->
+    <div class="cre_breadcrumb" data-bg-color="#F2F6F7">
         <div class="container custom_container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="cre_breadcrumb_wrapper py-5 text-center">
-                        <h2 class="title py-2">Contact Us</h2>
+                        <h2 class="title py-lg-5">Cookies Policy</h2>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- search filter end -->
+    <!-- breadcrumb end -->
 
     <!-- section here -->
-    <div class="cre_section section_padding" data-bg-color="#F2F6F7">
+    <div class="cre_section padding_bottom pt-80">
         <div class="container custom_container">
             <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="cre_contact_wrapper">
-                        <ul class="nav nav-pills justify-content-center mb-5" id="pills-tab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="active cu_btn btn_7" id="pills-user-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-user" type="button" role="tab" aria-controls="pills-user"
-                                    aria-selected="true">User</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="cu_btn btn_7 " id="pills-restaurant-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-restaurant" type="button" role="tab"
-                                    aria-controls="pills-restaurant" aria-selected="false">Restaurant</button>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-user" role="tabpanel"
-                                aria-labelledby="pills-user-tab" tabindex="0">
-
-                                <form action="#">
-                                    <div class="form_content_wrapper">
-                                        <div class="form-group">
-                                            <label for="name">Restaurant name</label>
-                                            <input type="text" id="name" name="name" class="form-control cu_input"
-                                                placeholder="Name">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="name">Email address</label>
-                                            <input type="text" id="Email" name="Email" class="form-control cu_input"
-                                                placeholder="E-mail">
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <div class="form-group">
-                                                    <label for="mobile-number1">Phone Number</label>
-                                                    <input type="tel" id="mobile-number1" class="form-control cu_input"
-                                                        placeholder="Phone number">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="Message">Message</label>
-                                            <textarea name="Message" id="Message" class="form-control cu_input"
-                                                placeholder="write message here..."></textarea>
-                                        </div>
-                                        <button type="submit" class="cu_btn btn_3 w-100 text-center">Submit</button>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="tab-pane fade" id="pills-restaurant" role="tabpanel"
-                                aria-labelledby="pills-restaurant-tab" tabindex="0">
-                                <form action="#">
-                                    <div class="form_content_wrapper">
-                                        <div class="form-group">
-                                            <label for="name">Restaurant name</label>
-                                            <input type="text" id="name" name="name" class="form-control cu_input"
-                                                placeholder="Name">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="name">Email address</label>
-                                            <input type="text" id="Email" name="Email" class="form-control cu_input"
-                                                placeholder="E-mail">
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <div class="form-group">
-                                                    <label for="mobile-number1">Phone Number</label>
-                                                    <input type="tel" id="mobile-number2" class="form-control cu_input"
-                                                        placeholder="Phone number">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <label for="Location">Location</label>
-                                            <div class="col-lg-6">
-                                                <div class="form-group">
-                                                    <input type="text" id="Street" name="Street"
-                                                        class="form-control cu_input" placeholder="Street">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="form-group">
-                                                    <input type="text" id="City" name="City"
-                                                        class="form-control cu_input" placeholder="City">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="form-group">
-                                                    <input type="text" id="Country" name="Country"
-                                                        class="form-control cu_input" placeholder="Country">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="form-group">
-                                                    <input type="text" id="Postal_code" name="Postal_code"
-                                                        class="form-control cu_input" placeholder="ZIP / Postal code">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="Message">Message</label>
-                                            <textarea name="Message" id="Message" class="form-control cu_input"
-                                                placeholder="write message here..."></textarea>
-                                        </div>
-                                        <div class="form-check mt-4">
-                                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2"
-                                                required>
-                                            <label class="form-check-label mb-0" for="invalidCheck2">
-                                                Existing Bideat Restaurant
-                                            </label>
-                                        </div>
-                                        <div class="form-check mt-2">
-                                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck3"
-                                                required>
-                                            <label class="form-check-label mb-0" for="invalidCheck3">
-                                                Interested in Joining Bideat
-                                            </label>
-                                        </div>
-                                        <button type="submit" class="cu_btn btn_3 w-100 text-center">Submit</button>
-                                    </div>
-                                </form>
-                            </div>
+                <div class="col-lg-12">
+                    <div class="cre_tarms_wrapper">
+                        <div class="tarms_item mb-4 mt-lg-5">
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Doloribus harum eum commodi ex, sint est, pariatur, quis voluptates quaerat maxime 
+                            tenetur aperiam fugit? Soluta, consectetur! Tempore</p>
+                        </div>
+                        <div class="tarms_item mb-4 mt-lg-5">
+                            <h3 class="title fw-bold">Bideat Cookies Policy</h3>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Doloribus harum eum commodi ex, sint est, pariatur, quis voluptates quaerat maxime 
+                            tenetur aperiam fugit? Soluta, consectetur! Tempore</p>
+                        </div>
+                        <div class="tarms_item mb-4 mt-lg-5">
+                            <h3 class="title fw-bold">PERSONAL INFORMATION WE COLLECT</h3>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Doloribus harum eum commodi ex, sint est, pariatur, quis voluptates quaerat maxime 
+                            tenetur aperiam fugit? Soluta, consectetur! Tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Doloribus harum eum commodi ex, sint est, pariatur, quis voluptates quaerat maxime 
+                            tenetur aperiam fugit? Soluta, consectetur! TemporeLorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Doloribus harum eum commodi ex, sint est, pariatur, quis voluptates quaerat maxime 
+                            tenetur aperiam fugit?</p>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nemo in voluptate 
+                            praesentium consequuntur, velit eos consequatur?</p>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eum! Dolore 
+                            exercitationem tempora similique aliquam architecto necessitatibus quae expedita assumenda asperiores,
+                            quasi et id qui. Quis harum aliquid sit autem ratione ab iusto accusamus labore vel mollitia placeat 
+                            rem quam, facilis in ad! Inventore distinctio repellat accusamus laborum vel asperiores?</p>
+                        </div>
+                        <div class="tarms_item mb-4 mt-lg-5">
+                            <h3 class="title fw-bold">SHARING YOUR PERSONAL INFORMATION</h3>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Doloribus harum eum commodi ex, sint est, pariatur, quis voluptates quaerat maxime 
+                            tenetur aperiam fugit? Soluta, consectetur! Tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Doloribus harum eum commodi ex, sint est, pariatur, quis voluptates quaerat maxime 
+                            tenetur aperiam fugit? Soluta, consectetur! TemporeLorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Doloribus harum eum commodi ex, sint est, pariatur, quis voluptates quaerat maxime 
+                            tenetur aperiam fugit?</p>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nemo in voluptate 
+                            praesentium consequuntur, velit eos consequatur?</p>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eum! Dolore 
+                            exercitationem tempora similique aliquam architecto necessitatibus quae expedita assumenda asperiores,
+                            quasi et id qui. Quis harum aliquid sit autem ratione ab iusto accusamus labore vel mollitia placeat 
+                            rem quam, facilis in ad! Inventore distinctio repellat accusamus laborum vel asperiores?</p>
+                        </div>
+                        <div class="tarms_item mb-4 mt-lg-5">
+                            <h3 class="title fw-bold">BEHAVIORAL ADVERTISING</h3>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Doloribus harum eum commodi ex, sint est, pariatur, quis voluptates quaerat maxime 
+                            tenetur aperiam fugit? Soluta, consectetur! Tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Doloribus harum eum commodi ex, sint est, pariatur, quis voluptates quaerat maxime 
+                            tenetur aperiam fugit? Soluta, consectetur! TemporeLorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Doloribus harum eum commodi ex, sint est, pariatur, quis voluptates quaerat maxime 
+                            tenetur aperiam fugit?</p>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nemo in voluptate 
+                            praesentium consequuntur, velit eos consequatur?</p>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eum! Dolore 
+                            exercitationem tempora similique aliquam architecto necessitatibus quae expedita assumenda asperiores,
+                            quasi et id qui. Quis harum aliquid sit autem ratione ab iusto accusamus labore vel mollitia placeat 
+                            rem quam, facilis in ad! Inventore distinctio repellat accusamus laborum vel asperiores?</p>
+                        </div>
+                        <div class="tarms_item mb-4 mt-lg-5">
+                            <h3 class="title fw-bold">DO NOT TRACK</h3>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Doloribus harum eum commodi ex, sint est, pariatur, quis voluptates quaerat maxime 
+                            tenetur aperiam fugit? Soluta, consectetur! Tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Doloribus harum eum commodi ex, sint est, pariatur, quis voluptates quaerat maxime 
+                            tenetur aperiam fugit? Soluta, consectetur! TemporeLorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Doloribus harum eum commodi ex, sint est, pariatur, quis voluptates quaerat maxime 
+                            tenetur aperiam fugit?</p>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nemo in voluptate 
+                            praesentium consequuntur, velit eos consequatur?</p>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eum! Dolore 
+                            exercitationem tempora similique aliquam architecto necessitatibus quae expedita assumenda asperiores,
+                            quasi et id qui. Quis harum aliquid sit autem ratione ab iusto accusamus labore vel mollitia placeat 
+                            rem quam, facilis in ad! Inventore distinctio repellat accusamus laborum vel asperiores?</p>
+                        </div>
+                        <div class="tarms_item mb-4 mt-lg-5">
+                            <h3 class="title fw-bold">YOUR RIGHTS</h3>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Doloribus harum eum commodi ex, sint est, pariatur, quis voluptates quaerat maxime 
+                            tenetur aperiam fugit? Soluta, consectetur! Tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Doloribus harum eum commodi ex, sint est, pariatur, quis voluptates quaerat maxime 
+                            tenetur aperiam fugit? Soluta, consectetur! TemporeLorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Doloribus harum eum commodi ex, sint est, pariatur, quis voluptates quaerat maxime 
+                            tenetur aperiam fugit?</p>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nemo in voluptate 
+                            praesentium consequuntur, velit eos consequatur?</p>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eum! Dolore 
+                            exercitationem tempora similique aliquam architecto necessitatibus quae expedita assumenda asperiores,
+                            quasi et id qui. Quis harum aliquid sit autem ratione ab iusto accusamus labore vel mollitia placeat 
+                            rem quam, facilis in ad! Inventore distinctio repellat accusamus laborum vel asperiores?</p>
+                        </div>
+                        <div class="tarms_item mb-4 mt-lg-5">
+                            <h3 class="title fw-bold">DATA RETENTION</h3>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nemo in voluptate 
+                            praesentium consequuntur, velit eos consequatur?</p>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eum! Dolore 
+                            exercitationem tempora similique aliquam architecto necessitatibus quae expedita assumenda asperiores,
+                            quasi et id qui. Quis harum aliquid sit autem ratione ab iusto accusamus labore vel mollitia placeat 
+                            rem quam, facilis in ad! Inventore distinctio repellat accusamus laborum vel asperiores?</p>
                         </div>
                     </div>
                 </div>
@@ -206,20 +186,6 @@
         </div>
     </div>
     <!-- section end -->
-
-
-    <!-- thankyou popup here here -->
-    <div class="modal thankyou_popup fade show" tabindex="-1" style="display: block;">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content text-center">
-                <h2 class="title">Thank You!</h2>
-                <p>Thank you for your message! A member of our <br> team will contact you soon.</p>
-                <a class="cu_btn btn_3 xs_btn mt-4" href="index.html">Back to homepage</a>
-            </div>
-        </div>
-    </div>
-    <!-- thankyou popup here end -->
-    <div class="modal-backdrop fade show"></div>
 
     <!-- footer section here -->
     <section class="cre_footer_section padding_top" data-bg-color="#034863">

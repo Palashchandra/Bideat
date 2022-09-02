@@ -175,7 +175,7 @@ button:focus,
 
 @media (min-width: 1300px) {
     .custom_container {
-        max-width: 1200px;
+        max-width: 1270px;
     }
 }
 
@@ -321,5 +321,96 @@ button:focus,
 }
 .mb-40{
     margin-bottom: 40px;
+}
+.border_top{
+    border-top: 1px solid rgba(3, 72, 99, 0.15);
+}
+.reset_password_wrapper{
+    box-shadow: 0 20px 70px rgb(178 135 135 / 15%);
+    background-color: #fff;
+    border-radius: 6px;
+    .content_header {
+        padding: 25px 30px;
+        border-bottom: 1px solid rgba(3, 72, 99, 0.1);
+    }
+    .main_content{
+        padding: 40px 40px 25px;
+        text-align: left;
+        .title{
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        .desription{
+            margin-bottom: 15px;
+        }
+        .note{
+            margin: 40px 0 25px;
+            text-align: center;
+            a{
+                color: $heading_color;
+                font-weight: 600;
+                text-transform: capitalize;
+                &:hover{
+                    color: $base_color_1;
+                }
+            }
+        }
+    }
+    .content_footer{
+        padding: 20px;
+        background-color: #F2F6F7;
+        a{
+            color: $heading_color;
+            font-weight: 600;
+            &:hover{
+                color: $base_color_1;
+            }
+        }
+    }
+}
+
+
+@media #{$tab}{
+    .reset_password_wrapper {
+        padding: 30px 15px;
+    }
+    
+    .reset_password_wrapper p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .reset_password_wrapper{
+        .content_header {
+            padding: 25px 15px;
+        }
+        .main_content{
+            padding: 20px 0 20px;
+            text-align: center;
+            .title{
+                margin-bottom: 15px;
+            }
+            .note{
+                margin: 20px 0 15px;
+            }
+        }
+        .content_footer{
+            padding: 15px;
+        }
+    }    
+}
+.cre_tarms_wrapper .title {
+    margin-bottom: 15px;
+}
+
+.cre_tarms_wrapper .tarms_item .description:not(:last-child) {
+    margin-bottom: 15px;
+}
+ul.list-style {
+    margin: 0;
+    padding: 0 0 0 19px;
+}
+
+ul.list-style li {
+    margin-bottom: 10px;
 }
 /**************** common css end ****************/

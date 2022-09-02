@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Bideat</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <!-- themify icon CSS -->
+    <link rel="stylesheet" href="vendors/font-awesome/css/all.min.css" />
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="vendors/swiper/swiper.min.css" />
+    <!-- niceselect CSS -->
+    <link rel="stylesheet" href="vendors/niceselect/css/nice-select.css" />
+    <!-- intlInputPhone CSS -->
+    <link rel="stylesheet" href="css/intlInputPhone.min.css" />
+    <!-- gijgo CSS -->
+    <link href="vendors/gijgo/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header class="cre_header_part">
+        <div class="cre_header_part_wrapper">
+            <nav class="navbar navbar-expand-xl navbar-light p-0">
+                <div class="container custom_container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/logo.png" alt="#" srcset="img/logo_2x.png 2x" class="main_logo">
+                        <img src="img/logo.png" alt="#" srcset="img/logo_2x.png 2x" class="sticky_logo">
+                    </a>
+                    <div class="mobile_collaps_icon d-flex align-items-center">
+                        <button class="border-0 bg-transparent d-xl-none" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                            <i class="fas fa-bars fs-2"></i>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse justify-content-center " id="navbarNavAltMarkup">
+                        <div class="search_form">
+                            <form action="#">
+                                <input type="text" placeholder="Search">
+                                <button type="submit" class="search_icon p-0 border-0 bg-transparent">
+                                    <img src="img/icon/search.svg" alt="#">
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="header_btn d-none d-xl-grid">
+                        <a class="cu_btn btn_3" data-bs-toggle="modal" href="#register_step_1" role="button">Sign up</a>
+                        <a class="cu_btn btn_1 text-center" data-bs-toggle="modal" href="#login_modal" role="button">Log
+                            in</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- section here -->
+    <div class="cre_section padding_top">
+        <div class="container custom_container">
+            <div class="row justify-content-between align-items-xxl-center">
+                <div class="col-lg-6">
+                    <div class="cre_restaurant_details_thumb wow fadeInUp" data-wow-delay=".3s">
+                        <div class="swiper-container restaurant_thumb">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="img/restaurent_slider_1.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/restaurent_slider_1.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/restaurent_slider_1.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/restaurent_slider_1.png" />
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-next"><i class="fas fa-arrow-right"></i></div>
+                            <div class="swiper-prev"><i class="fas fa-arrow-left"></i></div>
+                        </div>
+                        <div class="swiper-container restaurant_nav">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slider_thumb position-relative">
+                                        <img src="img/restaurent_slider_thumb_1.png" />
+                                        <div class="thumb_content text-center p-2 position-absolute top-50 start-50 translate-middle">
+                                            <h5>all</h5>
+                                            <p>100 photos</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider_thumb position-relative">
+                                        <img src="img/restaurent_slider_thumb_2.png" />
+                                        <div class="thumb_content text-center p-2 position-absolute top-50 start-50 translate-middle">
+                                            <h5>Food</h5>
+                                            <p>50 photos</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider_thumb position-relative">
+                                        <img src="img/restaurent_slider_thumb_3.png" />
+                                        <div class="thumb_content text-center p-2 position-absolute top-50 start-50 translate-middle">
+                                            <h5>Drinks</h5>
+                                            <p>50 photos</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider_thumb position-relative">
+                                        <img src="img/restaurent_slider_thumb_4.png" />
+                                        <div class="thumb_content text-center p-2 position-absolute top-50 start-50 translate-middle">
+                                            <h5>Interior</h5>
+                                            <p>50 photos</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="cre_restaurant_details mt-4 mt-lg-0 ms-lg-4 wow fadeInUp"
+                        data-wow-delay=".3s">
+                        <div class="text_box_header d-lg-flex justify-content-between">
+                            <div class="text_box_inner">
+                                <h2 class="title">Bavette's Bar & Boeuf</h2>
+                                <p class="description"> <img src="img/icon/map-pin.svg" alt="#">218 W Kinzie St,
+                                    Chicago, IL 60654 </p>
+                            </div>
+                            <div class="text_box_meta d-flex align-baseline mt-4 mt-lg-0">
+                                <a href="#" class="meta_item me-2"> <img src="img/icon/share.svg" alt="#"> </a>
+                                <a href="#" class="meta_item save_btn">
+                                    <div class="tricker">
+                                        <img src="img/icon/heart_1.svg" alt="#">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text_box_content">
+                            <div class="restaurant_meta">
+                                <div class="Reservation_content">
+                                    <div class="Reservation_item">
+                                        <p>Reservation Date:</p>
+                                        <h4>Fri, Jun 11 at 06:00 PM</h4>
+                                    </div>
+                                    <div class="Reservation_item">
+                                        <p>Highest Bid:</p>
+                                        <h4>$16.0</h4>
+                                    </div>
+                                    <div class="Reservation_item">
+                                        <p>Max Bid: <img src="img/icon/info.svg" alt="#"> </p>
+                                        <h4>$50.0</h4>
+                                    </div>
+                                    <div class="Reservation_item">
+                                        <p>Bidding Ends:</p>
+                                        <h4>Thu, Jun 10 at 10:00 PM</h4>
+                                    </div>
+                                </div>
+                                <div
+                                    class="Reservation_action d-md-flex align-items-center justify-content-between">
+                                    <div class="form-group d-flex align-items-center">
+                                        <label for="bid_amount">Bid amount: $</label>
+                                        <input type="text" id="bid_amount" name="bid_amount"
+                                            class="form-control cu_input" placeholder="">
+                                    </div>
+                                    <a class="cu_btn btn_3 xs_btn" href="#">Place Bid</a>
+                                </div>
+                            </div>
+                            <div class="restaurant_meta">
+                                <div class="Reservation_content">
+                                    <div class="Reservation_item">
+                                        <p>Reservation Date:</p>
+                                        <h4>Fri, Jun 11 at 06:00 PM</h4>
+                                    </div>
+                                    <div class="Reservation_item">
+                                        <p>Highest Bid:</p>
+                                        <h4>$16.0</h4>
+                                    </div>
+                                    <div class="Reservation_item">
+                                        <p>Max Bid: <img src="img/icon/info.svg" alt="#"> </p>
+                                        <h4>$50.0</h4>
+                                    </div>
+                                    <div class="Reservation_item">
+                                        <p>Bidding Ends:</p>
+                                        <h4>Thu, Jun 10 at 10:00 PM</h4>
+                                    </div>
+                                </div>
+                                <div
+                                    class="Reservation_action d-md-flex align-items-center justify-content-between">
+                                    <div class="form-group d-flex align-items-center">
+                                        <label for="bid_amount">Bid amount: $</label>
+                                        <input type="text" id="bid_amount" name="bid_amount"
+                                            class="form-control cu_input" placeholder="">
+                                    </div>
+                                    <a class="cu_btn btn_3  xs_btn" href="#">Place Bid</a>
+                                </div>
+                            </div>
+                            <div class="restaurant_meta">
+                                <div class="Reservation_content">
+                                    <div class="Reservation_item">
+                                        <p>Reservation Date:</p>
+                                        <h4>Fri, Jun 11 at 06:00 PM</h4>
+                                    </div>
+                                    <div class="Reservation_item">
+                                        <p>Highest Bid:</p>
+                                        <h4>$16.0</h4>
+                                    </div>
+                                    <div class="Reservation_item">
+                                        <p>Max Bid: <img src="img/icon/info.svg" alt="#"> </p>
+                                        <h4>$50.0</h4>
+                                    </div>
+                                    <div class="Reservation_item">
+                                        <p>Bidding Ends:</p>
+                                        <h4>Thu, Jun 10 at 10:00 PM</h4>
+                                    </div>
+                                </div>
+                                <div
+                                    class="Reservation_action d-md-flex align-items-center justify-content-between">
+                                    <div class="form-group d-flex align-items-center">
+                                        <label for="bid_amount">Bid amount: $</label>
+                                        <input type="text" id="bid_amount" name="bid_amount"
+                                            class="form-control cu_input" placeholder="">
+                                    </div>
+                                    <a class="cu_btn btn_3  xs_btn" href="#">Place Bid</a>
+                                </div>
+                            </div>
+                            <div class="restaurant_meta">
+                                <div class="Reservation_content">
+                                    <div class="Reservation_item">
+                                        <p>Reservation Date:</p>
+                                        <h4>Fri, Jun 11 at 06:00 PM</h4>
+                                    </div>
+                                    <div class="Reservation_item">
+                                        <p>Highest Bid:</p>
+                                        <h4>$16.0</h4>
+                                    </div>
+                                    <div class="Reservation_item">
+                                        <p>Max Bid: <img src="img/icon/info.svg" alt="#"> </p>
+                                        <h4>$50.0</h4>
+                                    </div>
+                                    <div class="Reservation_item">
+                                        <p>Bidding Ends:</p>
+                                        <h4>Thu, Jun 10 at 10:00 PM</h4>
+                                    </div>
+                                </div>
+                                <div
+                                    class="Reservation_action d-md-flex align-items-center justify-content-between">
+                                    <div class="form-group d-flex align-items-center">
+                                        <label for="bid_amount">Bid amount: $</label>
+                                        <input type="text" id="bid_amount" name="bid_amount"
+                                            class="form-control cu_input" placeholder="">
+                                    </div>
+                                    <a class="cu_btn btn_3  xs_btn" href="#">Place Bid</a>
+                                </div>
+                            </div>
+                            <div class="restaurant_meta">
+                                <div class="Reservation_content">
+                                    <div class="Reservation_item">
+                                        <p>Reservation Date:</p>
+                                        <h4>Fri, Jun 11 at 06:00 PM</h4>
+                                    </div>
+                                    <div class="Reservation_item">
+                                        <p>Highest Bid:</p>
+                                        <h4>$16.0</h4>
+                                    </div>
+                                    <div class="Reservation_item">
+                                        <p>Max Bid: <img src="img/icon/info.svg" alt="#"> </p>
+                                        <h4>$50.0</h4>
+                                    </div>
+                                    <div class="Reservation_item">
+                                        <p>Bidding Ends:</p>
+                                        <h4>Thu, Jun 10 at 10:00 PM</h4>
+                                    </div>
+                                </div>
+                                <div
+                                    class="Reservation_action d-md-flex align-items-center justify-content-between">
+                                    <div class="form-group d-flex align-items-center">
+                                        <label for="bid_amount">Bid amount: $</label>
+                                        <input type="text" id="bid_amount" name="bid_amount"
+                                            class="form-control cu_input" placeholder="">
+                                    </div>
+                                    <a class="cu_btn btn_3  xs_btn" href="#">Place Bid</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section end -->
+
+    <!-- section here -->
+    <div class="cre_section padding_bottom">
+        <div class="container custom_container">
+            <div class="row justify-content-between align-items-xl-center">
+                <div class="col-lg-12">
+                    <div class="cre_restaurant_details_section sec_padding">
+                        <div class="row g-lg-0">
+                            <div class="col-lg-6">
+                                <div class="cre_restaurant_details pb-0 ps-0 wow fadeInUp" data-wow-delay=".3s">
+                                    <div class="restaurant_details_item">
+                                        <h4 class="title fs-4 fw-bold">Menu</h4>
+                                        <p class="description">Four Courses (Appetiser + Soup + Fish or Meat + Dessert) ~ 
+                                        $988 per person Five Courses (Appetiser + Soup + Fish + Meat + Dessert) ~ $1,098 
+                                        per person. Menu Carte Blanche: Five Course Menu Designed around the Chef's 
+                                        Inspiration; $1,788 per person (For Complete Table Only), $3,068 per person with 
+                                        5 glasses of wine pairing included Château d'Yquem</p>
+                                    </div>
+                                    <div class="restaurant_details_item">
+                                        <h4 class="title fw-bold">Appetiser</h4>
+                                        <div class="restaurant_content_wrapper">
+                                            <div class="restaurant_content">
+                                                <h5 class="title">Parmesan Tarte "Riviera"</h5>
+                                                <p class="description">"Gillardeau" Celeriac Puree and Green Apple 
+                                                Jelly (Add Kristal Caviar $350)</p>
+                                            </div>
+                                            <div class="restaurant_content">
+                                                <h5 class="title">Parmesan Tarte "Riviera"</h5>
+                                                <p class="description">"Gillardeau" Celeriac Puree and Green Apple 
+                                                Jelly (Add Kristal Caviar $350)</p>
+                                            </div>
+                                            <div class="restaurant_content">
+                                                <h5 class="title">Parmesan Tarte "Riviera"</h5>
+                                                <p class="description">"Gillardeau" Celeriac Puree and Green Apple 
+                                                Jelly (Add Kristal Caviar $350)</p>
+                                            </div>
+                                            <div class="restaurant_content">
+                                                <h5 class="title">Parmesan Tarte "Riviera"</h5>
+                                                <p class="description">"Gillardeau" Celeriac Puree and Green Apple 
+                                                Jelly (Add Kristal Caviar $350)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="restaurant_details_item">
+                                        <h4 class="title fw-bold">Soup</h4>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <h5 class="title">Green Pea Soup, Wild Garlic Ham Emulsion and Frog Leg</h5>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <h5 class="title">Duck Consommé with Foie Gras Ravioli</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <a class="cu_btn btn_3 xs_btn mt-3 mt-lg-5" href="#">View full menu</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="cre_restaurant_details pb-0 pe-0 border-0 wow fadeInUp" data-wow-delay=".3s">
+                                    <div class="restaurant_details_item border-0 pb-0">
+                                        <h4 class="title fs-4 fw-bold">About</h4>
+                                        <p class="description">Chef Trevor Teich is a Chicago native who has worked in 
+                                        some of the country’s best restaurants, including L2O (three Michelin stars), 
+                                        NoMi (one star), and Acadia (two stars), as well as Twist by Pierre Gagnaire 
+                                        in Las Vegas (Gagnaire was voted best chef in the world in 2015 by Le Chef List 
+                                        of The Best Chefs in the World). He now brings his culinary vision to Chicago 
+                                        with CLAUDIA. </p>
+                                        <a href="#" class="read_more_btn">Read More</a>
+                                    </div>
+                                    <div class="restaurant_location_detail">
+                                        <h4 class="title fs-4 fw-bold mb-4">Hours and location</h4>
+                                        <div class="row">
+                                            <div class="col-xxl-6">
+                                                <div class="location_list d-flex align-items-center">
+                                                    <img src="img/icon/map-pin.svg" alt="#" >
+                                                    <p class="description">
+                                                        218 W Kinzie St, Chicago, IL 60654
+                                                    </p>
+                                                </div>
+                                                <div class="location_list d-flex align-items-center">
+                                                    <img src="img/icon/phone-call.svg" alt="">
+                                                    <a href="tel:+1 773-697-9486" class="description">
+                                                        +1 773-697-9486
+                                                    </a>
+                                                </div>
+                                                <div class="location_list select">
+                                                    <img src="img/icon/clock.svg" alt="">
+                                                    <div class="select_wrapper w-100">
+                                                        <p>Today</p>
+                                                        <select class="niceSelect">
+                                                            <option selected>Sunday   <span>5:30 PM - 10:00 PM</span> </option>
+                                                            <option value="1">Sunday   <span>5:30 PM - 10:00 PM</span></option>
+                                                            <option value="2">Sunday   <span>5:30 PM - 10:00 PM</span></option>
+                                                            <option value="3">Sunday   <span>5:30 PM - 10:00 PM</span></option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="location_list social">
+                                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-xxl-6">
+                                                <div class="mt-4 mt-xxl-0">
+                                                    <iframe width="100%" height="321" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=52.70967533219885, -8.020019531250002&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section end -->
+
+    <!-- footer section here -->
+    <section class="cre_footer_section padding_top" data-bg-color="#034863">
+        <div class="container custom_container">
+            <div class="row justify-content-between">
+                <div class="col-lg-5 col-sm-12">
+                    <div class="cre_footer_widget">
+                        <img src="img/footer_logo.png" alt="#" srcset="img/logo_2x.png 2x" class="footer_logo mb-4">
+                        <h4 class="description text-white">Curious about our <br> reservation and table <br> management
+                            system?</h4>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-4">
+                    <div class="cre_footer_widget mt-lg-4">
+                        <h2 class="widget_title">
+                            Company
+                        </h2>
+                        <ul class="footer_menu">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-4">
+                    <div class="cre_footer_widget mt-lg-4">
+                        <h2 class="widget_title">
+                            Discover
+                        </h2>
+                        <ul class="footer_menu">
+                            <li><a href="#">Dining Rewards</a></li>
+                            <li><a href="#">Private Dining</a></li>
+                            <li><a href="#">Reserve for Others</a></li>
+                            <li><a href="#">Restaurants Near Me</a></li>
+                            <li><a href="#">Restaurants Open Now</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-4">
+                    <div class="cre_footer_widget mt-lg-4">
+                        <h2 class="widget_title">
+                            Support
+                        </h2>
+                        <ul class="footer_menu">
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Cookies and</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cre_col_lg_12">
+                    <div class="cre_copyright_content d-sm-flex align-items-center justify-content-between">
+                        <div class="copyright_content_inner">
+                            <p>Copyright © 2022 <span class="base_color_1">Bideat</span></p>
+                        </div>
+                        <div class="copyright_content_inner">
+                            <div class="social_icon">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer section end -->
+
+    <!--offcanvas menu -->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <img src="img/logo.png" alt="#" srcset="img/logo_2x.png 2x" class="main_logo">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="search_form">
+                <form action="#">
+                    <input type="text" placeholder="Search">
+                    <button type="submit" class="search_icon p-0 border-0 bg-transparent">
+                        <img src="img/icon/search.svg" alt="#">
+                    </button>
+                </form>
+            </div>
+            <a class="cu_btn btn_3 d-block text-center mb-3" data-bs-toggle="modal" href="#register_step_1"
+                role="button">Sign up</a>
+            <a class="cu_btn btn_1 d-block text-center" data-bs-toggle="modal" href="#login_modal" role="button">Log
+                in</a>
+        </div>
+    </div>
+
+    <!--Sign up Modal -->
+    <div class="modal modal_content_wrapper fade" id="register_step_1" aria-hidden="true"
+        aria-labelledby="register_step_1_Label" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header position-relative justify-content-center">
+                    <h5 class="modal-title" id="register_step_1_Label">Sign up</h5>
+                    <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal"
+                        aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="form_content_wrapper">
+                    <h3 class="title text-center">Welcome to Bideat</h3>
+                    <form action="#">
+                        <div class="share_icon_list text-center">
+                            <a href="#" class="cu_btn btn_4 d-block text-center">
+                                <img src="img/icon/google.svg" alt="#" class="me-2"> Continue with Google
+                            </a>
+                            <a href="#" class="cu_btn btn_4 d-block text-center">
+                                <img src="img/icon/fb.svg" alt="#" class="me-2">Continue with Facebook
+                            </a>
+                            <a href="#" class="cu_btn btn_4 d-block text-center">
+                                <img src="img/icon/apple.svg" alt="#" class="me-2">Continue with Apple
+                            </a>
+                        </div>
+                        <p class="devider">
+                            <span>or</span>
+                        </p>
+                        <div class="form-group">
+                            <input type="email" class="form-control cu_input" id="reg_email" name="reg_email"
+                                placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <div class="position-relative">
+                                <input type="password" class="form-control cu_input" id="reg_popup_pass"
+                                    name="reg_popup_pass" placeholder="Password">
+                                <span toggle="#reg_popup_pass"
+                                    class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                            </div>
+                            <p class="note">Password must be at least 8 characters, Strong passwords have letters,
+                                numbers, and symbols.</p>
+                        </div>
+                    </form>
+                    <button class="cu_btn btn_3 w-100 text-center" data-bs-target="#register_step_2"
+                        data-bs-toggle="modal">Continue</button>
+                    <p class="modal_footer text-center">Already have an account? <button
+                            class="base_color_1 border-0 bg-transparent p-0" data-bs-target="#login_modal"
+                            data-bs-toggle="modal">Log in</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign up modal -->
+    <div class="modal modal_content_wrapper fade" id="register_step_2" aria-hidden="true"
+        aria-labelledby="register_step_2_Label" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header position-relative justify-content-center">
+                    <h5 class="modal-title" id="register_step_1_Label">Sign up</h5>
+                    <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal"
+                        aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="form_content_wrapper">
+                    <h3 class="title text-center mb-3">Welcome to Bideat</h3>
+                    <p class="description text-center mb-4 pb-2">Enter some information about yourself to get started.
+                    </p>
+                    <form action="#">
+                        <div class="form-group">
+                            <input type="text" id="First_name" name="First_name" class="form-control cu_input"
+                                placeholder="First name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="last_name" name="last_name" class="form-control cu_input"
+                                placeholder="Last name">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="mobile-number" class="form-control cu_input"
+                                placeholder="Phone number">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                                Sign me up to receive exclusive dining offer and news
+                            </label>
+                        </div>
+                        <button class="cu_btn btn_3 w-100 text-center" type="submit">Sign up</button>
+                    </form>
+                    <p class="modal_footer text-center">Already have an account? <button
+                            class="base_color_1 border-0 bg-transparent p-0" data-bs-target="#login_modal"
+                            data-bs-toggle="modal">Log in</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Log In modal -->
+    <div class="modal modal_content_wrapper fade" id="login_modal" aria-hidden="true"
+        aria-labelledby="login_modal_Label" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header position-relative justify-content-center">
+                    <h5 class="modal-title" id="register_step_1_Label">Log In</h5>
+                    <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal"
+                        aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="form_content_wrapper">
+                    <h3 class="title text-center">Welcome to Bideat</h3>
+                    <form action="#">
+                        <div class="form-group">
+                            <input type="email" class="form-control cu_input" id="login_email" name="login_email"
+                                placeholder="Email">
+                        </div>
+                        <div class="form-group position-relative">
+                            <input type="password" class="form-control cu_input" id="Password" name="Password"
+                                placeholder="Password">
+                            <span toggle="#reg_popup_pass" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                        </div>
+                        <button class="cu_btn btn_3 w-100 text-center" type="submit">Log in</button>
+                    </form>
+                    <p class="modal_footer d-block text-center mb-2">Create an account? <button
+                            class="base_color_1 border-0 bg-transparent p-0" data-bs-target="#register_step_1"
+                            data-bs-toggle="modal">Sign up</button></p>
+                    <p class="modal_footer d-block text-center"><button class="base_color_1 border-0 bg-transparent p-0"
+                            data-bs-target="#forgot_password" data-bs-toggle="modal">Forgot your password?</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Forgot your password modal -->
+    <div class="modal modal_content_wrapper fade" id="forgot_password" aria-hidden="true"
+        aria-labelledby="forgot_password_Label" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header position-relative justify-content-center">
+                    <h5 class="modal-title" id="forgot_password_Label">Forgot your password?</h5>
+                    <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal"
+                        aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="form_content_wrapper">
+                    <h3 class="title text-center">Welcome to Bideat</h3>
+                    <p class="description text-center mb-4 pb-2">Enter your username or email to recover your password.
+                        You will receive an email with instructions. If you are having problems recovering your password
+                        Contact .
+                    </p>
+                    <form action="#">
+                        <div class="form-group">
+                            <input type="email" class="form-control cu_input" id="forget_email" name="forget_email"
+                                placeholder="Email">
+                        </div>
+                        <a href="reset_password.html" class="cu_btn btn_3 w-100 text-center">Reset Password?</a>
+                    </form>
+                    <p class="modal_footer d-block text-center mb-2">Create an account? <button
+                            class="base_color_1 border-0 bg-transparent p-0" data-bs-target="#register_step_1"
+                            data-bs-toggle="modal">Sign up</button></p>
+                    <p class="modal_footer d-block text-center">Already have an account? <button
+                            class="base_color_1 border-0 bg-transparent p-0" data-bs-target="#login_modal"
+                            data-bs-toggle="modal">Sign In</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a class="cre_top_scroll">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- jquery slim -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jquery slim -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstarp js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- swiper js -->
+    <script src="vendors/swiper/swiper.min.js"></script>
+    <!-- wow js -->
+    <script src="vendors/wow/wow.min.js"></script>
+    <!-- niceselect js -->
+    <script src="vendors/niceselect/js/jquery.nice-select.min.js"></script>
+    <!-- intlInputPhone js -->
+    <script src="js/intlInputPhone.min.js"></script>
+    <!-- gijgo js -->
+    <script src="vendors/gijgo/gijgo.min.js" type="text/javascript"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

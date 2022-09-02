@@ -18,6 +18,9 @@
         }
     }
     .text_box_meta{
+        @media #{$tab}{
+            justify-content: center;
+        }
         .meta_item{
             width: 32px;
             height: 32px;
@@ -25,6 +28,9 @@
             border-radius: 50%;
             display: inline-grid;
             place-content: center;
+        }
+        .save_btn.saved .tricker img {
+            filter: brightness(0.5) invert(0);
         }
     }
 }

@@ -37,6 +37,12 @@
             filter: brightness(0) invert(1);
         }
     }
+    &.base_bg{
+        &:hover{
+            background-color: $base_color_1;
+            border-color: $base_color_1;
+        }
+    }
 }
 .restaurants_thumb{
     .slider_nav{

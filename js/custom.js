@@ -49,12 +49,12 @@
 
     $(".swiper-container").each(function () {
         var swiperJs = $(this),
-        perpage = ($(this).attr("id"), $(this).data("perpage") || 1),
-        loop = $(this).data("loop"),
-        speed = $(this).data("speed") || 1000,
-        space = $(this).data("space") || 0,
-        effect = $(this).data("effect"),
-        center = $(this).data("center"),
+            perpage = ($(this).attr("id"), $(this).data("perpage") || 1),
+            loop = $(this).data("loop"),
+            speed = $(this).data("speed") || 1000,
+            space = $(this).data("space") || 0,
+            effect = $(this).data("effect"),
+            center = $(this).data("center"),
             pl = $(this).data("autoplay"),
             nex = $(this).data("next"),
             pre = $(this).data("prev"),
@@ -141,7 +141,7 @@
 
     //datepicker jquery
     var datepicker = $('#datepicker');
-    if(datepicker.length){
+    if (datepicker.length) {
         datepicker.datepicker({
             uiLibrary: 'bootstrap5'
         });
@@ -169,37 +169,66 @@
 
     //mobile number
     var mobile_number = $("#mobile-number");
-    if(mobile_number.length){
+    if (mobile_number.length) {
         mobile_number.intlTelInput();
     }
     //mobile number
     var mobile_number = $("#mobile-number1");
-    if(mobile_number.length){
+    if (mobile_number.length) {
         mobile_number.intlTelInput();
     }
     //mobile number
     var mobile_number = $("#mobile-number2");
-    if(mobile_number.length){
+    if (mobile_number.length) {
         mobile_number.intlTelInput();
     }
 
     //toggle password
-    $(".toggle-password").click(function() {
+    $(".toggle-password").click(function () {
         $(this).toggleClass("fa-eye fa-eye-slash");
         var input = $($(this).attr("toggle"));
         if (input.attr("type") == "password") {
-          input.attr("type", "text");
+            input.attr("type", "text");
         } else {
-          input.attr("type", "password");
+            input.attr("type", "password");
         }
     });
 
     //save resturent js
-    $(".save_btn").on("click", function(e){
+    $(".save_btn").on("click", function (e) {
         e.preventDefault();
         $(this).toggleClass('saved');
     });
-    
+
+
+    var swiper = new Swiper(".restaurant_nav", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        loop: false,
+        breakpoints: {
+            480: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 4,
+            }
+        },
+    });
+    var swiper2 = new Swiper(".restaurant_thumb", {
+        spaceBetween: 10,
+        loop: false,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-next",
+            prevEl: ".swiper-prev",
+        },
+        thumbs: {
+            swiper: swiper,
+        },
+    });
 
 
 }(jQuery));

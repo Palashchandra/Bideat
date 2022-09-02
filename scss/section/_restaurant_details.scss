@@ -1,0 +1,302 @@
+.cre_restaurant_details {
+    .text_box_header {
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+    }
+    .cu_btn.xs_btn {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+    .read_more_btn{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 26px;
+        color: #034863;
+        margin-top: 16px;
+        text-transform: capitalize;
+        &:hover{
+            color: $base_color_1;
+        }
+    }
+    .text_box_header .text_box_meta{
+        @media #{$tab} {
+            justify-content: flex-start;
+        }
+    }
+}
+
+.restaurant_meta {
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid rgba(3, 72, 99, 0.2);
+
+    .Reservation_content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .Reservation_item {
+            &:not(:last-child) {
+                margin-right: 22px;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 26px;
+                color: rgba(3, 72, 99, 0.6);
+            }
+
+            h4 {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 26px;
+                color: #034863;
+            }
+        }
+    }
+
+    .Reservation_action label {
+        font-size: 16px;
+        line-height: 24px;
+        margin-right: 12px;
+    }
+
+    .cu_input {
+        max-width: 140px;
+        border: 1px solid rgba(3, 72, 99, 0.2);
+        border-radius: 12px;
+
+        @media #{$xs_mobile} {
+            margin: 8px 0;
+        }
+    }
+    
+}
+
+.cre_restaurant_details_thumb {
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .restaurant_thumb {
+        height: 80%;
+        width: 100%;
+    }
+
+    .restaurant_nav {
+        height: 20%;
+        box-sizing: border-box;
+        padding: 10px 0;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .swiper-container.restaurant_thumb {
+        position: relative;
+        z-index: 1;
+    }
+
+    .swiper-container.restaurant_thumb .swiper-prev,
+    .swiper-container.restaurant_thumb .swiper-next {
+        position: absolute;
+        z-index: 1;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #fff;
+        display: inline-grid;
+        place-content: center;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        &:hover {
+            background-color: $base_color_1;
+            color: $white;
+        }
+    }
+
+    .swiper-container.restaurant_thumb .swiper-next {
+        left: auto;
+        right: 20px;
+    }
+
+    .swiper-prev {}
+
+    .swiper-container.restaurant_thumb {
+        position: relative;
+        z-index: 1;
+    }
+
+    .swiper-container.restaurant_thumb .swiper-prev,
+    .swiper-container.restaurant_thumb .swiper-next {
+        position: absolute;
+        z-index: 1;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #fff;
+        display: inline-grid;
+        place-content: center;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .swiper-container.restaurant_thumb .swiper-next {
+        left: auto;
+        right: 20px;
+    }
+
+    .thumb_content h5 {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 24px;
+        margin-bottom: 0;
+        font-weight: 700;
+        @media #{$medium_device} {
+            font-size: 18px;
+        }
+    }
+
+    .thumb_content p {
+        color: #fff;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .thumb_content {
+        width: 100%;
+    }
+    .swiper-pagination{
+        z-index: 9;
+        bottom: 20px;
+    }
+    .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        background: #fff;
+        opacity: 1;
+        &.swiper-pagination-bullet-active{
+            background-color: $base_color_1;
+        }
+    }
+}
+
+.cre_restaurant_details_section{
+    &.sec_padding{
+        margin-top: 90px;
+        border-top: 1px solid rgba(3, 72, 99, 0.15);
+    }
+    .cre_restaurant_details{
+        padding: 37px;
+        border-right: 1px solid #D9E4E8;
+        @media #{$tab}{
+            padding: 37px 0;
+            border: 0px solid transparent;
+        }
+    }
+}
+.restaurant_details_item {
+    h4{
+        margin-bottom: 16px;
+        font-size: 18px;
+    }
+    h5{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: rgba(3, 72, 99, 0.8);
+    }
+    &:not(:last-child){
+        border-bottom: 1px solid rgba(3, 72, 99, 0.15);
+        margin-bottom: 24px;
+        padding-bottom: 24px;
+    }
+    .restaurant_content_wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 24px;
+    }
+}
+.location_list{
+    &:not(:last-child){
+        border-bottom: 1px solid rgba(3, 72, 99, 0.2);
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    img{
+        margin-right: 12px;
+    }
+    p,a{
+        color: #034863;
+        font-size: 18px;
+    }
+    &.social{
+        a{
+            color: $base_color_1;
+            margin-right: 8px;
+        }
+    }
+    &.select{
+        display: flex;
+        align-items: center;
+        .nice-select.niceSelect {
+            float: inherit;
+            height: auto;
+            line-height: initial;
+            font-size: 18px;
+            width: 100%;
+            span, .option{
+                font-size: 16px;
+            }
+        }
+    }
+    .nice-select .list {
+        width: 115%;
+        right: 0;
+        left: -15%;
+        li{
+            padding: 8px 12px;
+            &:not(:last-child){
+                border-bottom: 1px solid rgba(3, 72, 99, 0.1);
+            }
+        }
+        .option:hover, .option.focus, .option.selected.focus {
+            background-color: #fff;
+            
+        }
+        .nice-select .option.selected {
+            font-weight: 500;
+            color: #034863;
+        }
+        
+    }
+    .nice-select.open:after {
+        -webkit-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+        border-color: $base_color_1;
+    }
+}
+@media (min-width: 768px){
+    .restaurant_nav {
+        .swiper-wrapper{
+            transform: translate3d(0, 0px, 0px) !important;
+            transition-duration: 0ms !important;
+        }
+    }
+}

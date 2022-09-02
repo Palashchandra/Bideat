@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body class="modal-open">
+<body>
     <header class="cre_header_part">
         <div class="cre_header_part_wrapper">
             <nav class="navbar navbar-expand-xl navbar-light p-0">
@@ -43,7 +43,7 @@
                     <div class="collapse navbar-collapse justify-content-center " id="navbarNavAltMarkup">
                         <div class="search_form">
                             <form action="#">
-                                <input type="text" placeholder="Search">
+                                <input type="text" placeholder="Search" value="Nobu">
                                 <button type="submit" class="search_icon p-0 border-0 bg-transparent">
                                     <img src="img/icon/search.svg" alt="#">
                                 </button>
@@ -52,174 +52,123 @@
                     </div>
                     <div class="header_btn d-none d-xl-grid">
                         <a class="cu_btn btn_3" data-bs-toggle="modal" href="#register_step_1" role="button">Sign up</a>
-                        <a class="cu_btn btn_1 text-center" data-bs-toggle="modal" href="#login_modal" role="button">Log
-                            in</a>
+                        <a class="cu_btn btn_1 text-center" data-bs-toggle="modal" href="#login_modal" role="button">Log in</a>
                     </div>
                 </div>
             </nav>
         </div>
     </header>
 
+
     <!-- search filter here -->
-    <div class="cre_breadcrumb" data-bg-color="#fff">
+    <div class="cre_search pt-5 mt-2 padding_bottom">
         <div class="container custom_container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="cre_breadcrumb_wrapper py-5 text-center">
-                        <h2 class="title py-2">Contact Us</h2>
+                    <div class="cre_title mb-lg-5 mb-4">
+                        <h2 class="title">Search result for “nobu”</h2>
                     </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="cre_card_item style_02 border_style d-inline-block">
+                        <div class="card_thumb">
+                            <img src="img/news/blog_1.png" alt="#" class="img-fluid">
+                        </div>
+                        <div class="card_content_wrapper">
+                            <h4 class="title mb-0">Union Square Cafe,<br> <span class="base_color_1">New
+                                    York</span> </h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="cre_card_item style_02 border_style d-inline-block">
+                        <div class="card_thumb">
+                            <img src="img/news/blog_2.png" alt="#" class="img-fluid">
+                        </div>
+                        <div class="card_content_wrapper">
+                            <h4 class="title mb-0">Union Square Cafe,<br> <span class="base_color_1">New
+                                    York</span> </h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="cre_card_item style_02 border_style d-inline-block">
+                        <div class="card_thumb">
+                            <img src="img/news/blog_3.png" alt="#" class="img-fluid">
+                        </div>
+                        <div class="card_content_wrapper">
+                            <h4 class="title mb-0">Union Square Cafe,<br> <span class="base_color_1">New
+                                    York</span> </h4>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
     <!-- search filter end -->
 
-    <!-- section here -->
-    <div class="cre_section section_padding" data-bg-color="#F2F6F7">
+    <!-- search filter here -->
+    <div class="cre_search section_padding border_top">
         <div class="container custom_container">
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="cre_contact_wrapper">
-                        <ul class="nav nav-pills justify-content-center mb-5" id="pills-tab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="active cu_btn btn_7" id="pills-user-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-user" type="button" role="tab" aria-controls="pills-user"
-                                    aria-selected="true">User</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="cu_btn btn_7 " id="pills-restaurant-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-restaurant" type="button" role="tab"
-                                    aria-controls="pills-restaurant" aria-selected="false">Restaurant</button>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-user" role="tabpanel"
-                                aria-labelledby="pills-user-tab" tabindex="0">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="cre_section_title text-center">
+                        <h2 class="title">You Might Also Like</h2>
+                    </div>
+                </div>
 
-                                <form action="#">
-                                    <div class="form_content_wrapper">
-                                        <div class="form-group">
-                                            <label for="name">Restaurant name</label>
-                                            <input type="text" id="name" name="name" class="form-control cu_input"
-                                                placeholder="Name">
+                <div class="col-lg-12">
+                    <div class="cre_high_restaurants wow fadeInUp" data-wow-delay=".3s">
+                        <div class="swiper-container" data-perpage="3" data-loop="true" data-autoplay="true"
+                            data-speed="500" data-space="30" data-next=".slider_next_one" data-prev=".slider_prev_one"
+                            data-breakpoints='{"1440": {"slidesPerView": 3},"991": {"slidesPerView": 2}, "768": {"slidesPerView": 2}, "480": {"slidesPerView": 1}}'>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#" class="cre_card_item style_02 border_style d-inline-block">
+                                        <div class="card_thumb">
+                                            <img src="img/news/blog_1.png" alt="#" class="img-fluid">
                                         </div>
-                                        <div class="form-group">
-                                            <label for="name">Email address</label>
-                                            <input type="text" id="Email" name="Email" class="form-control cu_input"
-                                                placeholder="E-mail">
+                                        <div class="card_content_wrapper">
+                                            <h4 class="title mb-0">Majordomo<br> <span class="base_color_1">Los Angeles</span> </h4>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <div class="form-group">
-                                                    <label for="mobile-number1">Phone Number</label>
-                                                    <input type="tel" id="mobile-number1" class="form-control cu_input"
-                                                        placeholder="Phone number">
-                                                </div>
-                                            </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="cre_card_item style_02 border_style d-inline-block">
+                                        <div class="card_thumb">
+                                            <img src="img/news/blog_2.png" alt="#" class="img-fluid">
                                         </div>
-                                        <div class="form-group">
-                                            <label for="Message">Message</label>
-                                            <textarea name="Message" id="Message" class="form-control cu_input"
-                                                placeholder="write message here..."></textarea>
+                                        <div class="card_content_wrapper">
+                                            <h4 class="title mb-0">Providence<br> <span class="base_color_1">Los Angeles</span> </h4>
                                         </div>
-                                        <button type="submit" class="cu_btn btn_3 w-100 text-center">Submit</button>
-                                    </div>
-                                </form>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="cre_card_item style_02 border_style d-inline-block">
+                                        <div class="card_thumb">
+                                            <img src="img/news/blog_3.png" alt="#" class="img-fluid">
+                                        </div>
+                                        <div class="card_content_wrapper">
+                                            <h4 class="title mb-0">Girl & the Goat<br> <span class="base_color_1">Chicago</span> </h4>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="tab-pane fade" id="pills-restaurant" role="tabpanel"
-                                aria-labelledby="pills-restaurant-tab" tabindex="0">
-                                <form action="#">
-                                    <div class="form_content_wrapper">
-                                        <div class="form-group">
-                                            <label for="name">Restaurant name</label>
-                                            <input type="text" id="name" name="name" class="form-control cu_input"
-                                                placeholder="Name">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="name">Email address</label>
-                                            <input type="text" id="Email" name="Email" class="form-control cu_input"
-                                                placeholder="E-mail">
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <div class="form-group">
-                                                    <label for="mobile-number1">Phone Number</label>
-                                                    <input type="tel" id="mobile-number2" class="form-control cu_input"
-                                                        placeholder="Phone number">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <label for="Location">Location</label>
-                                            <div class="col-lg-6">
-                                                <div class="form-group">
-                                                    <input type="text" id="Street" name="Street"
-                                                        class="form-control cu_input" placeholder="Street">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="form-group">
-                                                    <input type="text" id="City" name="City"
-                                                        class="form-control cu_input" placeholder="City">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="form-group">
-                                                    <input type="text" id="Country" name="Country"
-                                                        class="form-control cu_input" placeholder="Country">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="form-group">
-                                                    <input type="text" id="Postal_code" name="Postal_code"
-                                                        class="form-control cu_input" placeholder="ZIP / Postal code">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="Message">Message</label>
-                                            <textarea name="Message" id="Message" class="form-control cu_input"
-                                                placeholder="write message here..."></textarea>
-                                        </div>
-                                        <div class="form-check mt-4">
-                                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2"
-                                                required>
-                                            <label class="form-check-label mb-0" for="invalidCheck2">
-                                                Existing Bideat Restaurant
-                                            </label>
-                                        </div>
-                                        <div class="form-check mt-2">
-                                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck3"
-                                                required>
-                                            <label class="form-check-label mb-0" for="invalidCheck3">
-                                                Interested in Joining Bideat
-                                            </label>
-                                        </div>
-                                        <button type="submit" class="cu_btn btn_3 w-100 text-center">Submit</button>
-                                    </div>
-                                </form>
-                            </div>
+                        </div>
+                        <div class="slider_pagination text-center mt-3 mt-lg-5 wow fadeInUp" data-wow-delay=".4s">
+                            <span class="slider_prev_one base_bg">
+                                <img src="img/icon/arrow-left-1.svg" alt="#">
+                            </span>
+                            <span class="slider_next_one base_bg">
+                                <img src="img/icon/arrow-right-1.svg" alt="#">
+                            </span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- section end -->
-
-
-    <!-- thankyou popup here here -->
-    <div class="modal thankyou_popup fade show" tabindex="-1" style="display: block;">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content text-center">
-                <h2 class="title">Thank You!</h2>
-                <p>Thank you for your message! A member of our <br> team will contact you soon.</p>
-                <a class="cu_btn btn_3 xs_btn mt-4" href="index.html">Back to homepage</a>
-            </div>
-        </div>
-    </div>
-    <!-- thankyou popup here end -->
-    <div class="modal-backdrop fade show"></div>
+    <!-- search filter end -->
 
     <!-- footer section here -->
     <section class="cre_footer_section padding_top" data-bg-color="#034863">
@@ -307,22 +256,19 @@
                     </button>
                 </form>
             </div>
-            <a class="cu_btn btn_3 d-block text-center mb-3" data-bs-toggle="modal" href="#register_step_1"
-                role="button">Sign up</a>
-            <a class="cu_btn btn_1 d-block text-center" data-bs-toggle="modal" href="#login_modal" role="button">Log
-                in</a>
+            <a class="cu_btn btn_3 d-block text-center mb-3" data-bs-toggle="modal" href="#register_step_1" role="button">Sign up</a>
+            <a class="cu_btn btn_1 d-block text-center" data-bs-toggle="modal" href="#login_modal" role="button">Log in</a>
         </div>
     </div>
 
     <!--Sign up Modal -->
-    <div class="modal modal_content_wrapper fade" id="register_step_1" aria-hidden="true"
-        aria-labelledby="register_step_1_Label" tabindex="-1">
+    <div class="modal modal_content_wrapper fade" id="register_step_1" aria-hidden="true" aria-labelledby="register_step_1_Label"
+        tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header position-relative justify-content-center">
                     <h5 class="modal-title" id="register_step_1_Label">Sign up</h5>
-                    <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal"
-                        aria-label="Close">
+                    <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal" aria-label="Close">
                         <i class="fas fa-times"></i>
                     </button>
                 </div>
@@ -349,41 +295,34 @@
                         </div>
                         <div class="form-group">
                             <div class="position-relative">
-                                <input type="password" class="form-control cu_input" id="reg_popup_pass"
-                                    name="reg_popup_pass" placeholder="Password">
-                                <span toggle="#reg_popup_pass"
-                                    class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                                <input type="password" class="form-control cu_input" id="reg_popup_pass" name="reg_popup_pass" placeholder="Password">
+                                <span toggle="#reg_popup_pass" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                             </div>
-                            <p class="note">Password must be at least 8 characters, Strong passwords have letters,
-                                numbers, and symbols.</p>
+                            <p class="note">Password must be at least 8 characters, Strong passwords have letters, 
+                            numbers, and symbols.</p>
                         </div>
                     </form>
-                    <button class="cu_btn btn_3 w-100 text-center" data-bs-target="#register_step_2"
-                        data-bs-toggle="modal">Continue</button>
-                    <p class="modal_footer text-center">Already have an account? <button
-                            class="base_color_1 border-0 bg-transparent p-0" data-bs-target="#login_modal"
-                            data-bs-toggle="modal">Log in</button></p>
+                    <button class="cu_btn btn_3 w-100 text-center" data-bs-target="#register_step_2" data-bs-toggle="modal">Continue</button>
+                    <p class="modal_footer text-center">Already have an account? <button class="base_color_1 border-0 bg-transparent p-0" data-bs-target="#login_modal" data-bs-toggle="modal">Log in</button></p>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Sign up modal -->
-    <div class="modal modal_content_wrapper fade" id="register_step_2" aria-hidden="true"
-        aria-labelledby="register_step_2_Label" tabindex="-1">
+    <div class="modal modal_content_wrapper fade" id="register_step_2" aria-hidden="true" aria-labelledby="register_step_2_Label"
+        tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header position-relative justify-content-center">
                     <h5 class="modal-title" id="register_step_1_Label">Sign up</h5>
-                    <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal"
-                        aria-label="Close">
+                    <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal" aria-label="Close">
                         <i class="fas fa-times"></i>
                     </button>
                 </div>
                 <div class="form_content_wrapper">
                     <h3 class="title text-center mb-3">Welcome to Bideat</h3>
-                    <p class="description text-center mb-4 pb-2">Enter some information about yourself to get started.
-                    </p>
+                    <p class="description text-center mb-4 pb-2">Enter some information about yourself to get started.</p>
                     <form action="#">
                         <div class="form-group">
                             <input type="text" id="First_name" name="First_name" class="form-control cu_input"
@@ -395,33 +334,30 @@
                         </div>
                         <div class="form-group">
                             <input type="tel" id="mobile-number" class="form-control cu_input"
-                                placeholder="Phone number">
+                            placeholder="Phone number">
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
                             <label class="form-check-label" for="invalidCheck2">
                                 Sign me up to receive exclusive dining offer and news
                             </label>
-                        </div>
+                          </div>
                         <button class="cu_btn btn_3 w-100 text-center" type="submit">Sign up</button>
                     </form>
-                    <p class="modal_footer text-center">Already have an account? <button
-                            class="base_color_1 border-0 bg-transparent p-0" data-bs-target="#login_modal"
-                            data-bs-toggle="modal">Log in</button></p>
+                    <p class="modal_footer text-center">Already have an account? <button class="base_color_1 border-0 bg-transparent p-0" data-bs-target="#login_modal" data-bs-toggle="modal">Log in</button></p>
                 </div>
             </div>
         </div>
     </div>
-
+    
     <!-- Log In modal -->
-    <div class="modal modal_content_wrapper fade" id="login_modal" aria-hidden="true"
-        aria-labelledby="login_modal_Label" tabindex="-1">
+    <div class="modal modal_content_wrapper fade" id="login_modal" aria-hidden="true" aria-labelledby="login_modal_Label"
+        tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header position-relative justify-content-center">
                     <h5 class="modal-title" id="register_step_1_Label">Log In</h5>
-                    <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal"
-                        aria-label="Close">
+                    <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal" aria-label="Close">
                         <i class="fas fa-times"></i>
                     </button>
                 </div>
@@ -433,38 +369,33 @@
                                 placeholder="Email">
                         </div>
                         <div class="form-group position-relative">
-                            <input type="password" class="form-control cu_input" id="Password" name="Password"
-                                placeholder="Password">
+                            <input type="password" class="form-control cu_input" id="Password" name="Password" placeholder="Password">
                             <span toggle="#reg_popup_pass" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                         </div>
                         <button class="cu_btn btn_3 w-100 text-center" type="submit">Log in</button>
                     </form>
-                    <p class="modal_footer d-block text-center mb-2">Create an account? <button
-                            class="base_color_1 border-0 bg-transparent p-0" data-bs-target="#register_step_1"
-                            data-bs-toggle="modal">Sign up</button></p>
-                    <p class="modal_footer d-block text-center"><button class="base_color_1 border-0 bg-transparent p-0"
-                            data-bs-target="#forgot_password" data-bs-toggle="modal">Forgot your password?</button></p>
+                    <p class="modal_footer d-block text-center mb-2">Create an account? <button class="base_color_1 border-0 bg-transparent p-0" data-bs-target="#register_step_1" data-bs-toggle="modal">Sign up</button></p>
+                    <p class="modal_footer d-block text-center"><button class="base_color_1 border-0 bg-transparent p-0" data-bs-target="#forgot_password" data-bs-toggle="modal">Forgot your password?</button></p>
                 </div>
             </div>
         </div>
     </div>
-
+    
     <!-- Forgot your password modal -->
-    <div class="modal modal_content_wrapper fade" id="forgot_password" aria-hidden="true"
-        aria-labelledby="forgot_password_Label" tabindex="-1">
+    <div class="modal modal_content_wrapper fade" id="forgot_password" aria-hidden="true" aria-labelledby="forgot_password_Label"
+        tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header position-relative justify-content-center">
                     <h5 class="modal-title" id="forgot_password_Label">Forgot your password?</h5>
-                    <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal"
-                        aria-label="Close">
+                    <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal" aria-label="Close">
                         <i class="fas fa-times"></i>
                     </button>
                 </div>
                 <div class="form_content_wrapper">
                     <h3 class="title text-center">Welcome to Bideat</h3>
-                    <p class="description text-center mb-4 pb-2">Enter your username or email to recover your password.
-                        You will receive an email with instructions. If you are having problems recovering your password
+                    <p class="description text-center mb-4 pb-2">Enter your username or email to recover your password. 
+                        You will receive an email with instructions. If you are having problems recovering your password 
                         Contact .
                     </p>
                     <form action="#">
@@ -474,12 +405,8 @@
                         </div>
                         <a href="reset_password.html" class="cu_btn btn_3 w-100 text-center">Reset Password?</a>
                     </form>
-                    <p class="modal_footer d-block text-center mb-2">Create an account? <button
-                            class="base_color_1 border-0 bg-transparent p-0" data-bs-target="#register_step_1"
-                            data-bs-toggle="modal">Sign up</button></p>
-                    <p class="modal_footer d-block text-center">Already have an account? <button
-                            class="base_color_1 border-0 bg-transparent p-0" data-bs-target="#login_modal"
-                            data-bs-toggle="modal">Sign In</button></p>
+                    <p class="modal_footer d-block text-center mb-2">Create an account? <button class="base_color_1 border-0 bg-transparent p-0" data-bs-target="#register_step_1" data-bs-toggle="modal">Sign up</button></p>
+                    <p class="modal_footer d-block text-center">Already have an account? <button class="base_color_1 border-0 bg-transparent p-0" data-bs-target="#login_modal" data-bs-toggle="modal">Sign In</button></p>
                 </div>
             </div>
         </div>
